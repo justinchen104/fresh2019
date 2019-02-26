@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+		<!-- Primary Meta Tags -->
+		<title>104人力銀行 - 2019新鮮人線上徵才博覽會 - 企業求才刊登</title>
+		<meta name="title" content="104人力銀行 - 2019新鮮人線上徵才博覽會 - 企業求才刊登">
+		<meta name="description" content="新鮮人照過來照過來！2019新鮮人線上徵才博覽會開幕囉！年度最夯最優質的高人氣職缺盡在這裡面！">
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="http://mark1.ec-wakeup.com/2019Fresh/index.html">
+		<meta property="og:title" content="104人力銀行 - 2019新鮮人線上徵才博覽會 - 企業求才刊登">
+		<meta property="og:description" content="新鮮人照過來照過來！2019新鮮人線上徵才博覽會開幕囉！年度最夯最優質的高人氣職缺盡在這裡面！">
+		<meta property="og:image" content="http://mark1.ec-wakeup.com/2019Fresh/img/og-image.jpg">
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="http://mark1.ec-wakeup.com/2019Fresh/index.html">
+		<meta property="twitter:title" content="104人力銀行 - 2019新鮮人線上徵才博覽會 - 企業求才刊登">
+		<meta property="twitter:description" content="新鮮人照過來照過來！2019新鮮人線上徵才博覽會開幕囉！年度最夯最優質的高人氣職缺盡在這裡面！">
+		<meta property="twitter:image" content="http://mark1.ec-wakeup.com/2019Fresh/img/og-image.png">
+
+		<link rel="stylesheet" type="text/css" href="plugin/slick/slick.css"/>
+		<link rel="stylesheet" href="plugin/aos/aos.css">
+		<link rel="stylesheet" href="plugin/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/invite.css">
+		<script src="plugin/jquery/1.9.1.min.js"></script>
+		<script src="plugin/jqueryui/1.10.3.min.js"></script>
+		<script src="plugin/aos/aos.js"></script>
+		<script src="plugin/slick/slick.min.js"></script>
+		<script src="plugin/parallax/parallax.js"></script>
+		<script src="js/global.js"></script>
+		<script src="js/invite.js"></script>
+		<script>
+			$(function() {
+				var scene = document.getElementById('wkscene');
+				var parallax = new Parallax(scene);
+				//送出表單
+				$("#btnSubmit").click(function(event) {
+					cancelHandler(event)
+					//防呆機制
+					var name = $("#companyForm input#name").val()
+					var email = $("#companyForm input#email").val()
+					var companyName = $("#companyForm input#company").val()
+					var tel = $("#companyForm input#phone").val()
+					var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+					if(name==""||email==""||companyName==""||tel==""){
+						alert('請填寫必選資料')
+					}else {
+						if(!regex.test(email)) {
+							alert('e-mail格式不正確，請重新確認')
+						}else {
+							if (!$("#wkcheckbox").prop("checked")) {
+								alert('請勾選同意上述資料')
+							}else {
+								$("#companyForm").submit()
+							}
+						}
+					}
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<header>
+			<div class="bg-box"></div>
+			<div class="logo-box">
+				<a href="index.html">
+					<img src="img/_mode/header/logo.png">
+				</a>
+			</div>
+			<ul class="icon-box">
+				<li class="live"><a href="live.html"><img src="img/_mode/header/live.png"></a></li>
+				<li class="fb"><a href="#"><img src="img/_mode/header/fb.png"></a></li>
+			</ul>
+			<ul class="page-link-box">
+				<li class="link1"><a href="index.html">求職主場</a></li>
+				<!-- <li class="link2"><a href="#">測驗案</a></li> -->
+				<li class="link3"><a href="invite.html">企業求才刊登</a></li>
+			</ul>
+			<div class="menu-btn"><i class="fa fa-bars" aria-hidden="true"></i></div>
+			<div class="mobile-menu-out-box hide">
+				<div class="header"></div>
+				<div class="bg-box">
+					<div class="close">✕</div>
+					<div class="bottom-bg"></div>
+					<ul class="link-menu">
+						<li class="li1 hide"><a href="index.html">求職主場</a></li>
+						<li class="li2 hide"><a href="invite.html">企業求才刊登</a></li>
+						<!-- <li class="li3 hide"><a href="#">企業求才刊登</a></li> -->
+						<li class="li3 hide icon-box">
+							<div class="flex-box">
+								<span><a href="live.html"><img src="img/_mode/header/live.png"></a></span>
+								<span><a href="#"><img src="img/_mode/header/fb.png"></a></span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<!-- hintman區塊 -->
+		<div class="gotop-outbox">
+			<div class="gotop-box">
+				<div class="gotop-arrow"></div>
+				<div class="gotop-circle"></div>
+				<div class="text-box">
+					<span class="text text1">可以點我！回到最上方</span>
+				</div>
+			</div>
+		</div>
+
+		<!-- 畫面置底錨點區塊 -->
+		<div class="anchor-box">
+			<ul>
+				<li><a href="index.html"><img src="img/_mode/anchor-box/icon1.png"><span>求職主場</span></a></li>
+				<li><a href="#"><img src="img/_mode/anchor-box/icon2.png"><span>測驗案</span></a></li>
+				<li><a href="invite.html"><img src="img/_mode/anchor-box/icon3.png"><span>求才刊登</span></a></li>
+				<li><a href="live.html"><img src="img/_mode/anchor-box/icon4.png"><span>LIVE</span></a></li>
+				<li><a href="#"><img src="img/_mode/anchor-box/icon5.png"></a></li>
+			</ul>
+		</div>
+
+		<div class="bg-box" >
+			<div class="section1" id="wkscene">
+				<div class="title-box">
+					<div class="main-title-outbox layer" data-depth="0.20"><div class="main-title"></div></div>
+					<div class="sub-title1-outbox layer" data-depth="0.25"><div class="sub-title1"></div></div>
+					<div class="sub-title2-outbox layer" data-depth="0.3"><div class="sub-title2"></div></div>
+					<div class="sub-title3-outbox layer" data-depth="0.35"><div class="sub-title3"></div></div>
+				</div>
+			</div>
+			<div class="section2">
+				<div class="stage-header"></div>
+				<div class="stage">
+					<div class="title-box">
+						<div class="flex-box">
+							<h3>一場校園徵才活動夠嗎？</h3>
+							<span>＃其實你有更超值的選擇！</span>
+						</div>
+					</div>
+					<div class="compare-box">
+						<div class="left-box">
+							<span class="title">實際校徵活動</span>
+							<ul>
+								<li>一場只有8小時</li>
+								<li>一場只能接觸一所學校學生</li>
+								<li>一場活動攤位＋場佈＋同仁加班費＋宣傳DM等等，勞心勞力一場可能只能接觸200~300個學生</li>
+							</ul>
+						</div>
+						<div class="mid-box">
+							<span class="title"></span>
+							<ul>
+								<li>時效</li>
+								<li>宣傳廣度</li>
+								<li>宣傳效果</li>
+							</ul>
+						</div>
+						<div class="mid-hint"></div>
+						<div class="right-box">
+							<span class="title">104新鮮人線上徵才博覽會<i class="win" data-aos="fade-down" data-aos-delay="2000" data-aos-duration="500"  data-aos-offset="0"></i></span>
+							<ul>
+								<li><span class="red">天天24小時宣傳</span>不斷電<i class="win"  data-aos="fade-down" data-aos-delay="500" data-aos-duration="500"  data-aos-offset="0"></i></li>
+								<li><span class="red">觸及全台</span>各大專院校社會新鮮人<i class="win"  data-aos="fade-down" data-aos-delay="1000" data-aos-duration="500"  data-aos-offset="0"></i></li>
+								<li>基本包套<span class="red">一個月不到＄3萬元</span>企業形象、職缺資訊、價值百萬宣傳導流，一次搞定！<i class="win" data-aos="fade-down" data-aos-delay="1500" data-aos-duration="500"  data-aos-offset="0"></i></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="stage-footer"></div>
+			</div>
+			<div class="section3">
+				<div class="title-box"></div>
+				<ul class="category">
+					<li class="cat-1"></li>
+					<li class="cat-2"></li>
+					<li class="cat-3"></li>
+				</ul>
+			</div>
+			<div class="section4">
+				<div class="title-box"></div>
+				<div class="stage">
+					<div class="title">＃企業HR您好！歡迎企業填單，將有專人為您解說！（*為必填）</div>
+					<div class="form-out-box">
+						<div class="form-box">
+							<form id="companyForm" name="form1" method="post" action="https://learn.104.com.tw/cfdocs/edu/mailto/edmfeedback_write.cfm">
+								<input type="hidden" name="vip" value="8051">
+								<input type="hidden" name="to" value="pinky.chuang@104.com.tw">
+								<input type="hidden" name="subj" value="【2019新鮮人線上徵才博覽會】企業求才刊登">
+								<input type="hidden" name="file_name" value="/project/104project/fresh2019.htm">
+								<input type="hidden" name="send_member" value="104learn">
+								<input type="hidden" name="edm_cate" value="80000">
+								<input type="hidden" name="result_file_name" value="/project/104project/fresh2019.htm">
+								<input type="hidden" name="alert_info" value="感謝您的來信！我們將會派專員與您聯絡！">
+								<input type="hidden" name="becheck1" value="姓名;電子郵件;聯絡電話;公司名稱">
+								<input type="hidden" name="becheck2" value="name;email;phone;company">
+								<input type="hidden" name="sn" value="2846">
+								<input id="name" name="name" type="text" placeholder="*請輸入您的大名">
+								<input id="email" name="email" type="text" placeholder="*請輸入您的Email">
+								<input id="company" name="company" type="text" placeholder="*請輸入公司名稱">
+								<input id="phone" name="phone" type="text" placeholder="*請輸入公司電話 ex:02-29126104 轉8357">
+								<label><input id="wkcheckbox" type="checkbox"><span class="checkmark"></span><span>我同意提供上列資料</span></label>
+								<div class="btn submit">確認送出<input type="button" id="btnSubmit"></div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="bottom-bg"></div>
+			</div>
+
+		</div>
+		<footer>
+			<div class="people-box">
+				<span class="people people1"><img src="img/_mode/footer/people1.png"></span>
+				<span class="people people2"><img src="img/_mode/footer/people2.png"></span>
+				<span class="people people3"><img src="img/_mode/footer/people3.png"></span>
+				<span class="people people4"><img src="img/_mode/footer/people4.png"></span>
+				<span class="people people5"><img src="img/_mode/footer/people5.png"></span>
+				<span class="people people6"><img src="img/_mode/footer/people6.png"></span>
+				<span class="people people7"><img src="img/_mode/footer/people7.png"></span>
+			</div>
+			<div class="copyright">一零四資訊科技股份有限公司｜版權所有©2019</div>
+		</footer>
+	</body>
+</html>
+
+
