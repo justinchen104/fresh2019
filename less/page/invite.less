@@ -1,0 +1,936 @@
+body {
+	background-repeat: repeat;
+	background-image: url("@{image}page/page-bg.png");
+}
+section {
+	padding: 0 100px;
+	@media all and (max-width: 1200px) {
+		& {
+			padding: 0 20px;
+		}
+	}
+}
+body>.bg-box {
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-image: url("@{image}page/invite/bg.png");
+	@media all and (max-width: 800px) {
+		& {
+			background-size: contain;
+			background-image: url("@{image}page/invite/bg-mobile1.png");
+		}
+	}
+}
+.section1 {
+	width: 100%;
+	height: 650px;
+	position: relative;
+	padding-top: 20px;
+	@media all and (max-width: 800px) {
+		& {
+			width: 100%;
+			height: auto;
+		}
+	}
+	@media all and (max-width: 800px) {
+		& { padding-top: 30px; }
+	}
+	.title-box {
+		position: relative;
+		width: 1000px;
+		left: 50%;
+		margin-left: -500px;
+
+		@media all and (max-width: 1200px) {
+			& {
+				top: 8%;
+				transform: scale(0.8);
+				transform-origin: center;
+			}
+		}
+		@media all and (max-width: 950px) {
+			& {
+				top: 14%;
+				transform: scale(0.7);
+			}
+		}
+		@media all and (max-width: 800px) {
+			& {
+				width: 100%;
+				padding-bottom: 60%;
+				top: 14%;
+				left: auto;
+				margin: 0 auto;
+				transform: scale(1);
+			}
+		}
+		>div {
+			@media all and (max-width: 800px) {
+				& {
+					width: 100%;
+				}
+			}
+		}
+		.main-title {
+			position: absolute;
+			top: 120px;
+			left: 70px;
+			width: 803px;
+			height: 433px;
+			background-image: url("@{image}page/invite/section1-maintitle.png");
+			@media all and (max-width: 800px) {
+				& {
+					top: 0;
+					left: 5%;
+					width: 90%;
+					height: auto;
+					padding-bottom: 49%;
+					background-size: contain;
+					background-repeat: no-repeat;
+				}
+			}
+		}
+		.sub-title1 {
+			position: absolute;
+			top: 23px;
+			left: 0px;
+			width: 374px;
+			height: 144px;
+			background-image: url("@{image}page/invite/section1-subtitle1.png");
+			@media all and (max-width: 800px) {
+				& { display: none; }
+			}
+		}
+		.sub-title2-outbox {
+			@media all and (max-width: 800px) {
+				& {
+					top: 60%!important;
+				}
+			}
+		}
+		.sub-title2 {
+			position: absolute;
+			top: 435px;
+			left: -80px;
+			width: 449px;
+			height: 125px;
+			background-image: url("@{image}page/invite/section1-subtitle2.png");
+			animation: boardFloat 8s ease infinite;
+			@media all and (max-width: 800px) {
+				& {
+					top: 0;
+					left: 5%;
+					width: 35%;
+					height: auto;
+					padding-bottom: 10%;
+					background-size: contain;
+					background-repeat: no-repeat;
+				}
+			}
+		}
+		.sub-title3-outbox {
+			@media all and (max-width: 800px) {
+				& {
+					top: 60%!important;
+				}
+			}
+		}
+		.sub-title3 {
+			position: absolute;
+			top: 440px;
+			left: 550px;
+			width: 449px;
+			height: 125px;
+			background-image: url("@{image}page/invite/section1-subtitle3.png");
+			animation: boardFloat 10s ease infinite;
+			@media all and (max-width: 800px) {
+				& {
+					top: 0;
+					left: 59%;
+					width: 35%;
+					height: auto;
+					padding-bottom: 10%;
+					background-size: contain;
+					background-repeat: no-repeat;
+				}
+			}
+		}
+		@keyframes boardFloat {
+			0% { transform: translate3d(0,0,0); }
+			50% { transform: translate3d(5px,-20px,0px); }
+			100% { transform: translate3d(0,0,0); }
+		}
+	}
+}
+.section2 {
+	width: 100%;
+	position: relative;
+	margin-bottom: 10px;
+	@media all and (max-width: 800px) {
+		& {
+			margin-bottom: 10%;
+			margin-top: -12%;
+		}
+	}
+	.stage-header {
+		display: none;
+		width: 90%;
+		margin: 0 auto;
+		padding-bottom: 25%;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-image: url("@{image}page/invite/section2-stage-header.png");
+		@media all and (max-width: 800px) {
+			& {
+				display: block;
+			}
+		}
+	}
+	.stage-footer {
+		display: none;
+		width: 90%;
+		margin: 0 auto;
+		padding-bottom: 53%;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-image: url("@{image}page/invite/section2-stage-footer.png");
+		@media all and (max-width: 800px) {
+			& {
+				display: block;
+			}
+		}
+	}
+	.stage {
+		width: 1111px;
+		height: 820px;
+		position: relative;
+		left: 50%;
+		margin-left: -555px;
+		padding: 110px 70px;
+		margin-top: -55px;
+		background-repeat: no-repeat;
+		background-image: url("@{image}page/invite/section2-stage-bg.png");
+		@media all and (max-width: 1200px) {
+			& {
+				transform: scale(0.8);
+			}
+		}
+		@media all and (max-width: 950px) {
+			& {
+				transform: scale(0.7);
+			}
+		}
+		@media all and (max-width: 800px) {
+			& {
+				width: 90%;
+				height: auto;
+				left: auto;
+				padding: 0;
+				margin: 0 auto;
+				margin-top: -1px;
+				transform: scale(1);
+				background-size: contain;
+				background-repeat: repeat;
+				background-image: url("@{image}page/invite/section2-stage-mid.png");
+			}
+		}
+		.title-box {
+			width: 635px;
+			height: 130px;
+			margin: 0 auto;
+			margin-bottom: 40px;
+			padding-top: 8px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 65px;
+			border: solid 8px #f7a700;
+			box-shadow: 0px 14px 0 #d88a00;
+			background-color: #fff;
+			@media all and (max-width: 800px) {
+				& {
+					width: 80%;
+					height: 100px;
+				}
+			}
+			@media all and (max-width: 450px) {
+				& {
+					height: 80px;
+				}
+			}
+			@media all and (max-width: 400px) {
+				& {
+					height: 60px;
+					border: solid 4px #f7a700;
+					box-shadow: 0px 8px 0 #d88a00;
+				}
+			}
+			.flex-box {
+				h3 {
+					font-size: 45px;
+					font-weight: bold;
+					color: #4A4A4A;
+					text-align: center;
+					line-height: 1;
+					margin-bottom: 5px;
+					@media all and (max-width: 800px) {
+						& { font-size: 33px; }
+					}
+					@media all and (max-width: 600px) {
+						& { font-size: 26px; }
+					}
+					@media all and (max-width: 450px) {
+						& { font-size: 22px; }
+					}
+					@media all and (max-width: 400px) {
+						& { font-size: 16px; }
+					}
+				}
+				span {
+					display: block;
+					font-size: 24px;
+					color: #4A4A4A;
+					text-align: center;
+					@media all and (max-width: 800px) {
+						& {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+		.compare-box {
+			@media all and (max-width: 800px) {
+				& {
+					overflow: hidden;
+				}
+			}
+			.left-box {
+				width: 390px;
+				float: left;
+				background-color: #fff;
+				@media all and (max-width: 800px) {
+					& {
+						width: 80%;
+						float: none;
+						margin: 0 auto;
+						margin-bottom: 10px;
+					}
+				}
+				.title {
+					display: block;
+					width: 414px;
+					height: 120px;
+					position: relative;
+					top: -8px;
+					left: -11px;
+					font-size: 23px;
+					font-weight: bold;
+					padding: 38px 0 0 60px;
+					color: #510F02;
+					background-repeat: no-repeat;
+					background-image: url("@{image}page/invite/section2-title-bg.png");
+					@media all and (max-width: 800px) {
+						& {
+							width: 100%;
+							height: auto;
+							font-size: 22px;
+							padding: 7% 0 8% 15%;
+							background-size: contain;
+							background-image: url("@{image}page/invite/section2-title-bg-mobile.png");
+						}
+					}
+					@media all and (max-width: 550px) {
+						& {
+							font-size: 18px;
+							padding: 7% 0 8% 13%;
+						}
+					}
+					@media all and (max-width: 400px) {
+						& { font-size: 14px; padding: 7% 0 8% 11%; }
+					}
+				}
+				ul {
+					padding: 0 25px 10px 25px;
+					@media all and (max-width: 400px) {
+						& {
+							padding: 0 25px 10px 10px;
+						}
+					}
+					li {
+						display: block;
+						padding: 10px 10px;
+						font-size: 20px;
+						color: #666;
+						border-bottom: dashed 1px #333;
+						@media all and (max-width: 800px) {
+							& { font-size: 18px; }
+						}
+						@media all and (max-width: 550px) {
+							& { font-size: 16px; }
+						}
+						@media all and (max-width: 400px) {
+							& { font-size: 14px; }
+						}
+					}
+
+					li:last-child {
+						border-bottom: none;
+					}
+				}
+			}
+			.mid-box {
+				width: 146px;
+				float: left;
+				margin: 0 20px;
+				@media all and (max-width: 800px) {
+					& {
+						display: none;
+					}
+				}
+				.title {
+					display: block;
+					width: 146px;
+					height: 97px;
+					margin-bottom: 20px;
+					position: relative;
+					background-repeat: no-repeat;
+					background-image: url("@{image}page/invite/section2-icon-vs.png");
+				}
+				ul {
+
+					li {
+						display: block;
+						width: 100%;
+						padding: 10px 0px;
+						font-size: 22px;
+						font-weight: bold;
+						color: #510F02;
+						text-align: center;
+						border-radius: 30px;
+						margin-bottom: 15px;
+						background-color: #f9b610;
+					}
+				}
+			}
+			.mid-hint {
+				display: none;
+				width: 458px;
+				height: 292px;
+				margin: 0 auto;
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-image: url("@{image}page/invite/section2-mid-hint.png");
+				@media all and (max-width: 800px) {
+					& {
+						display: block;
+					}
+				}
+				@media all and (max-width: 600px) {
+					& {
+						display: block;
+						width: 90%;
+						height: auto;
+						padding-bottom: 58%;
+					}
+				}
+			}
+			.right-box {
+				width: 390px;
+				float: left;
+				background-color: #fff;
+				@media all and (max-width: 800px) {
+					& {
+						width: 80%;
+						float: none;
+						margin: 0 auto;
+						margin-bottom: 10px;
+						margin-top: -10%;
+					}
+				}
+				.title {
+					display: block;
+					width: 414px;
+					height: 120px;
+					position: relative;
+					top: -8px;
+					left: -11px;
+					font-size: 23px;
+					font-weight: bold;
+					padding: 38px 0 0 60px;
+					color: #510F02;
+					background-repeat: no-repeat;
+					background-image: url("@{image}page/invite/section2-title-bg.png");
+					@media all and (max-width: 800px) {
+						& {
+							width: 100%;
+							height: auto;
+							font-size: 22px;
+							padding: 7% 0 8% 15%;
+							background-size: contain;
+							background-image: url("@{image}page/invite/section2-title-bg-mobile.png");
+						}
+					}
+					@media all and (max-width: 550px) {
+						& {
+							font-size: 18px;
+							padding: 7% 0 8% 13%;
+						}
+					}
+					@media all and (max-width: 400px) {
+						& { font-size: 14px; padding: 7% 0 8% 11%; }
+					}
+					i {
+						position: absolute;
+						top: 25px;
+						right: 18px;
+						width: 52px;
+						height: 52px;
+						background-repeat: no-repeat;
+						background-image: url("@{image}page/invite/section2-icon-win.png");
+						@media all and (max-width: 550px) {
+							& {
+								width: 35px;
+								height: 35px;
+								right: 0;
+								background-size: contain;
+							}
+						}
+					}
+				}
+				ul {
+					padding: 0 25px 10px 25px;
+					@media all and (max-width: 400px) {
+						& {
+							padding: 0 25px 10px 10px;
+						}
+					}
+					li {
+						position: relative;
+						display: block;
+						padding: 10px 10px;
+						font-size: 19px;
+						color: #666;
+						border-bottom: dashed 1px #333;
+						@media all and (max-width: 800px) {
+							& { font-size: 18px; }
+						}
+						@media all and (max-width: 550px) {
+							& { font-size: 16px; }
+						}
+						@media all and (max-width: 400px) {
+							& { font-size: 14px; }
+						}
+						.red {
+							color: #D0021B;
+							font-weight: bold;
+						}
+						i {
+							position: absolute;
+							top: 0;
+							right: 0;
+							width: 52px;
+							height: 52px;
+							background-repeat: no-repeat;
+							background-image: url("@{image}page/invite/section2-icon-win.png");
+							@media all and (max-width: 550px) {
+								& {
+									width: 35px;
+									height: 35px;
+									right: -20px;
+									background-size: contain;
+								}
+							}
+						}
+					}
+					li:nth-child(1) {
+						i {
+							top: -10px;
+							right: 70px;
+							@media all and (max-width: 800px) {
+								& { top: -15px; right: 0; }
+							}
+							@media all and (max-width: 550px) {
+								& { top: 0px; right: -20px; }
+							}
+						}
+					}
+					li:nth-child(2) {
+						i {
+							top: -10px;
+							right: 0px;
+							@media all and (max-width: 800px) {
+								& { top: 1px; }
+							}
+							@media all and (max-width: 550px) {
+								& { top: 5px; right: -20px; }
+							}
+						}
+					}
+					li:last-child {
+						border-bottom: none;
+						width: 80%;
+						@media all and (max-width: 800px) {
+							& { width: 87%; }
+						}
+						i {
+							top: 20px;
+							right: -50px;
+							@media all and (max-width: 800px) {
+								& { top: 20px; right: -15%;  }
+							}
+							@media all and (max-width: 550px) {
+								& { right: -23%; }
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.section3 {
+	width: 100%;
+	position: relative;
+	margin-bottom: 90px;
+	@media all and (max-width: 800px) {
+		& { margin-bottom: 5%; }
+	}
+	.title-box {
+		width: 775px;
+		height: 300px;
+		margin: 0 auto;
+		background-repeat: no-repeat;
+		background-image: url("@{image}page/invite/section3-title1.png");
+		@media all and (max-width: 800px) {
+			& {
+				width: 100%;
+				height: auto;
+				padding-bottom: 39%;
+				background-size: contain;
+			}
+		}
+		@media all and (max-width: 400px) {
+			& {
+				width: 90%;
+				padding-bottom: 47%;
+				background-image: url("@{image}page/invite/section3-title2.png");
+			}
+		}
+	}
+	.category {
+		width: 1200px;
+		margin: 0 auto;
+		margin-top: -115px;
+		@media all and (max-width: 1200px) {
+			& {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+			}
+		}
+		@media all and (max-width: 1050px) {
+			& {
+				display: block;
+				width: 351px;
+			}
+		}
+		@media all and (max-width: 800px) {
+			& {
+				margin-top: 0%;
+				width: 100%;
+			}
+		}
+		&:after {
+			content: '';
+			display: table;
+			clear: both;
+		}
+		li {
+			float: left;
+			width: 351px;
+			height: 448px;
+			margin-right: 73px;
+			background-repeat: no-repeat;
+			background-position: bottom center;
+			@media all and (max-width: 1200px) {
+				& {
+					margin-right: 0;
+					width: 33%;
+				}
+			}
+			@media all and (max-width: 1050px) {
+				& {
+					width: 351px;
+				}
+			}
+			@media all and (max-width: 800px) {
+				& {
+					float: none;
+					width: 65%;
+					height: auto;
+					margin: 0 auto;
+					padding-bottom: 66%;
+					background-size: contain;
+				}
+			}
+			@media all and (max-width: 450px) {
+				& {
+					float: none;
+					width: 90%;
+					height: auto;
+					margin: 0 auto;
+					padding-bottom: 100%;
+					background-size: contain;
+				}
+			}
+		}
+		li.cat-1 {
+			background-image: url("@{image}page/invite/section3-cat-1.png");
+			@media all and (max-width: 800px) {
+				& { margin-bottom: 5%; background-image: url("@{image}page/invite/section3-cat-1-mobile.png"); }
+			}
+		}
+		li.cat-2 {
+			background-image: url("@{image}page/invite/section3-cat-2.png");
+			@media all and (max-width: 800px) {
+				& { background-image: url("@{image}page/invite/section3-cat-2-mobile.png"); }
+			}
+		}
+		li.cat-3 {
+			margin-right: 0;
+			background-image: url("@{image}page/invite/section3-cat-3.png");
+			@media all and (max-width: 800px) {
+				& {  margin-right: auto; margin-top: 8%; background-image: url("@{image}page/invite/section3-cat-3-mobile.png"); }
+			}
+		}
+	}
+}
+.section4 {
+	position: relative;
+	margin-bottom: 200px;
+	@media all and (max-width: 800px) {
+		& { margin-bottom: 10%; }
+	}
+	@media all and (max-width: 600px) {
+		& { margin-bottom: 15%; }
+	}
+	@media all and (max-width: 400px) {
+		& { margin-bottom: 20%; }
+	}
+	.title-box {
+		width: 803px;
+		height: 303px;
+		margin: 0 auto;
+		background-repeat: no-repeat;
+		background-image: url("@{image}page/invite/section4-title1.png");
+		@media all and (max-width: 800px) {
+			& {
+				width: 100%;
+				height: auto;
+				padding-bottom: 38%;
+				background-size: contain;
+			}
+		}
+		@media all and (max-width: 400px) {
+			& {
+				width: 90%;
+				padding-bottom: 49%;
+				margin-bottom: 5%;
+				background-image: url("@{image}page/invite/section4-title2.png");
+			}
+		}
+	}
+	.stage {
+		width: 1050px;
+		height: 401px;
+		z-index: 1;
+		position: relative;
+		top: 0;
+		left: 50%;
+		padding: 44px 60px;
+		margin-left: -525px;
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-image: url("@{image}page/invite/section4-stage.png");
+		@media all and (max-width: 1200px) {
+			& {
+				width: 800px;
+				height: 800px;
+				padding: 60px;
+				margin-left: -400px;
+			}
+		}
+		@media all and (max-width: 800px) {
+			& {
+				width: 90%;
+				height: auto;
+				padding: 8% 5%;
+				margin-left: 5%;
+				margin-bottom: 10%;
+				left: 0;
+				background-size: contain;
+				background-image: none;
+				background-color: #f0f0f0;
+			}
+		}
+
+		.title {
+			font-size: 22px;
+			color: #000;
+			margin-bottom: 20px;
+			@media all and (max-width: 800px) {
+				& {
+					font-size: 20px;
+					margin-bottom: 20px;
+				}
+			}
+		}
+		.form-box {
+			input {
+				font-size: 18px;
+				color: #666;
+				outline: none;
+				border-radius: 8px;
+				padding: 12px 8px;
+				margin-bottom: 15px;
+				border: solid 1px #BCBCBC;
+				@media all and (max-width: 800px) {
+					& {
+						font-size: 16px;
+						margin-bottom: 10px;
+						border-radius: 6px;
+					}
+				}
+			}
+			input[type=text] {
+				width: 48%;
+				margin-right: 2%;
+				@media all and (max-width: 800px) {
+					& { width: 100%; margin-right: 0; }
+				}
+			}
+			input:nth-child(2n) {
+				margin-right: 0;
+			}
+			label {
+				display: block;
+				position: relative;
+				margin-right: 20px;
+				color: #666;
+				font-size: 18px;
+				margin-bottom: 10px;
+				@media all and (max-width: 800px) {
+					& {
+						font-size: 16px;
+					}
+				}
+				input[type=checkbox] {
+					position: absolute;
+					opacity: 0;
+					cursor: pointer;
+					height: 0;
+					width: 0;
+				}
+				.checkmark {
+					display: inline-block;
+					height: 24px;
+					width: 24px;
+					border-radius: 6px;
+					margin-right: 5px;
+					border: solid 1px #BCBCBC;
+					vertical-align: bottom;
+					background-color: #fff;
+					@media all and (max-width: 800px) {
+						& {
+							vertical-align: text-top;
+						}
+					}
+				}
+				.checkmark:after {
+					content: "";
+					position: absolute;
+					display: none;
+				}
+				input:checked ~ .checkmark:after {
+					display: block;
+				}
+				.checkmark:after {
+					left: 9px;
+					top: 26%;
+					width: 5px;
+					height: 10px;
+					border: solid #666;
+					border-width: 0 2px 2px 0;
+					-webkit-transform: rotate(45deg);
+					-ms-transform: rotate(45deg);
+					transform: rotate(45deg);
+					@media all and (max-width: 800px) {
+						& {
+							left: 5px;
+							width: 3px;
+							height: 6px;
+						}
+					}
+				}
+				>span {
+					vertical-align: bottom;
+				}
+			}
+			.hint {
+				font-size: 16px;
+				color: #E85D3F;
+				margin-bottom: 10px;
+			}
+			.btn {
+				float: left;
+				position: relative;
+				cursor: pointer;
+				display: inline-block;
+				width: 128px;
+				font-size: 16px;
+				color: #000;
+				padding: 6px 0;
+				// margin-top: 13px;
+				margin-right: 20px;
+				text-align: center;
+				border-radius: 5px;
+				background-color: #F5A623;
+				box-shadow: 0px 4px #D6890A;
+				@media all and (max-width: 800px) {
+					& {
+						font-size: 16px;
+						float: none;
+					}
+				}
+				input {
+					position: absolute;
+					top: 0;
+					left: 0;
+					opacity: 0;
+					cursor: pointer;
+					width: 100%;
+					height: 100%;
+				}
+			}
+			.btn.disabled {
+				pointer-events: none;
+				cursor: not-allowed;
+			}
+		}
+	}
+	.bottom-bg {
+		display: none;
+		width: 100%;
+		padding-bottom: 49%;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-image: url("@{image}page/invite/section4-bottom-bg.png");
+		@media all and (max-width: 800px) {
+			& {
+				display: block;
+			}
+		}
+	}
+}
