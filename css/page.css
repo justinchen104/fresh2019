@@ -3256,7 +3256,13 @@ section {
   overflow: hidden;
 }
 .section8 .bg-box {
+  margin-bottom: 20px;
   background-color: #5B9891;
+}
+@media all and (max-width: 600px) {
+  .section8 .bg-box {
+    margin-bottom: 50px;
+  }
 }
 .section8 .bg-box .text-box {
   position: absolute;

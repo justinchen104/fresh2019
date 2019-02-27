@@ -2176,7 +2176,11 @@ section {
 	width: 100%;
 	overflow: hidden;
 	.bg-box {
+		margin-bottom: 20px;
 		background-color: #5B9891;
+		@media all and (max-width: 600px) {
+			& { margin-bottom: 50px; }
+		}
 		.text-box {
 			position: absolute;
 			top: 0;
