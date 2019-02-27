@@ -3256,8 +3256,12 @@ section {
   overflow: hidden;
 }
 .section8 .bg-box {
-  margin-bottom: 20px;
   background-color: #5B9891;
+}
+@media all and (max-width: 800px) {
+  .section8 .bg-box {
+    margin-bottom: 20px;
+  }
 }
 @media all and (max-width: 600px) {
   .section8 .bg-box {
@@ -3321,7 +3325,7 @@ section {
 .section8 .bg-box .message-board-box {
   position: relative;
   left: 50%;
-  padding: 30px 0;
+  padding: 0;
   margin-left: -700px;
   width: 1400px;
 }
