@@ -843,6 +843,11 @@ section {
     width: 250px;
   }
 }
+.section1 .logo-box-mobile .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 @media all and (max-width: 800px) {
   .section1 .logo-box-mobile .logo {
     width: 75%;
@@ -1724,6 +1729,7 @@ section {
     height: auto;
     overflow: hidden;
     padding: 0 20px;
+    max-height: none;
   }
 }
 @media all and (max-width: 400px) {
@@ -2866,6 +2872,7 @@ section {
   color: #000;
   margin-bottom: 10px;
   overflow: hidden;
+  word-break: break-word;
 }
 @media all and (max-width: 1300px) {
   .section6 .stage .qa-box .qa .flex-box span {
@@ -4008,6 +4015,9 @@ body.nocard .section4 {
 }
 body.nocard .section5 {
   display: none;
+}
+body.no-message-board .section6 {
+  margin-bottom: 100px;
 }
 body.no-message-board .section7,
 body.no-message-board .section8 {
