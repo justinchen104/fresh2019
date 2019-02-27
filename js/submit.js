@@ -14,9 +14,11 @@ $(function() {
         var customId = $("#customId").val(); // customId
         var eventId = $("#eventId").val(); // eventId
         var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-        if (wkName==0 || wkEmail==0 || wkQstyle==0) {
+        if (!wkAgree){
+            alert('請確認已勾選 同意提供資料')
+        } else if (wkName==0 || wkEmail==0 || wkQstyle==0) {
             alert('請確認已填寫所有必填欄位')
-        }else {
+        } else {
             if(!regex.test(wkEmail)) {
                 alert('e-mail格式不正確，請重新確認')
             }else {
