@@ -1,4 +1,8 @@
 $(function() {
+	//判斷若為IE，則刪除文字牆動畫效果，此效果會讓IE非常lag
+	if (window.ActiveXObject || "ActiveXObject" in window){
+		$(".section8 .text-box").remove();
+	}
 	var messageInitSlide = 0;
 	//手機版主視覺下方區塊的背景人物隨機跳動
 	// setInterval(function() {
