@@ -32,13 +32,25 @@
 		<script src="plugin/jqueryui/1.10.3.min.js"></script>
 		<script src="plugin/aos/aos.js"></script>
 		<script src="plugin/slick/slick.min.js"></script>
-		<script src="plugin/parallax/parallax.js"></script>
+		<!-- <script src="plugin/parallax/parallax.js"></script> -->
 		<script src="js/global.js"></script>
 		<script src="js/invite.js"></script>
 		<script>
 			$(function() {
-				var scene = document.getElementById('wkscene');
-				var parallax = new Parallax(scene);
+				//判斷是否為IE決定是否加載parallax.js效果
+				//此特效會造成input填寫功能失效
+				if (window.ActiveXObject || "ActiveXObject" in window){
+
+				}else {
+					$.getScript( "plugin/parallax/parallax.js", function( data, textStatus, jqxhr ) {
+						// console.log( data ); // Data returned
+						// console.log( textStatus ); // Success
+						// console.log( jqxhr.status ); // 200
+						// console.log( "Load was performed." );
+						var scene = document.getElementById('wkscene');
+						var parallax = new Parallax(scene);
+					});
+				}
 				//送出表單
 				$("#btnSubmit").click(function(event) {
 					cancelHandler(event)
