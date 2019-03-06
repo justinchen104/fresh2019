@@ -1280,7 +1280,7 @@ section {
   justify-content: center;
   width: 100%;
   height: 185px;
-  background-color: #F39800;
+  background-color: #000;
 }
 @media all and (max-width: 800px) {
   .section3 .box .article-list-box .article-list li .top-box .t-box {
@@ -1309,11 +1309,41 @@ section {
   justify-content: center;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 .section3 .box .article-list-box .article-list li .top-box .t-box a iframe {
   display: block;
   width: 100%;
   height: 100%;
+}
+.section3 .box .article-list-box .article-list li .top-box .t-box a img {
+  display: block;
+  width: 100%;
+}
+.section3 .box .article-list-box .article-list li .top-box .t-box a .black-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.section3 .box .article-list-box .article-list li .top-box .t-box a .black-mask i {
+  font-size: 60px;
+  color: #e6e6e6;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -10px;
+  margin-top: -30px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.section3 .box .article-list-box .article-list li .top-box .t-box a .black-mask:hover i {
+  color: #ec2020;
 }
 .section3 .box .article-list-box .article-list li .top-box .flex-box .title {
   display: block;
