@@ -1040,7 +1040,6 @@ section {
   border-radius: 10px;
   background-color: #F4F4F4;
   box-shadow: 1px 7px #CECECE;
-  margin-bottom: 17px;
 }
 .section1 .live-info-box .live-countdown {
   padding: 8px 15px;
@@ -1048,6 +1047,7 @@ section {
   background-color: #F4F4F4;
   box-shadow: 1px 7px #CECECE;
   text-align: center;
+  margin-bottom: 17px;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -3867,7 +3867,8 @@ section {
   transition: all 0.3s ease;
 }
 .section3 .front-box .inset-box .company-detail-box .com-jobs-box table.com-jobs td .join-btn:hover {
-  transform: translate3d(0, -5px, 0);
+  background-color: #fdcf00;
+  box-shadow: 0px 4px #f8b300;
 }
 .section3 .front-box .inset-box .company-detail-box .com-jobs-box table.com-jobs td .join-btn a {
   display: block;
