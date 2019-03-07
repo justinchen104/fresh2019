@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 
+		<link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
 		<!-- Primary Meta Tags -->
 		<title>104人力銀行 - 2019新鮮人線上徵才博覽會 - 企業求才刊登</title>
 		<meta name="title" content="104人力銀行 - 2019新鮮人線上徵才博覽會 - 企業求才刊登">
@@ -11,17 +12,17 @@
 
 		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="http://mark1.ec-wakeup.com/2019Fresh/index.html">
+		<meta property="og:url" content="https://kad.events.104.com.tw/fresh2019/index.html">
 		<meta property="og:title" content="104人力銀行 - 2019新鮮人線上徵才博覽會 - 企業求才刊登">
 		<meta property="og:description" content="新鮮人照過來照過來！2019新鮮人線上徵才博覽會開幕囉！年度最夯最優質的高人氣職缺盡在這裡面！">
-		<meta property="og:image" content="http://mark1.ec-wakeup.com/2019Fresh/img/og-image.jpg">
+		<meta property="og:image" content="https://kad.events.104.com.tw/fresh2019/img/og-image.jpg">
 
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image">
-		<meta property="twitter:url" content="http://mark1.ec-wakeup.com/2019Fresh/index.html">
+		<meta property="twitter:url" content="https://kad.events.104.com.tw/fresh2019/index.html">
 		<meta property="twitter:title" content="104人力銀行 - 2019新鮮人線上徵才博覽會 - 企業求才刊登">
 		<meta property="twitter:description" content="新鮮人照過來照過來！2019新鮮人線上徵才博覽會開幕囉！年度最夯最優質的高人氣職缺盡在這裡面！">
-		<meta property="twitter:image" content="http://mark1.ec-wakeup.com/2019Fresh/img/og-image.png">
+		<meta property="twitter:image" content="https://kad.events.104.com.tw/fresh2019/img/og-image.jpg">
 
 		<link rel="stylesheet" type="text/css" href="plugin/slick/slick.css"/>
 		<link rel="stylesheet" href="plugin/aos/aos.css">
@@ -31,13 +32,25 @@
 		<script src="plugin/jqueryui/1.10.3.min.js"></script>
 		<script src="plugin/aos/aos.js"></script>
 		<script src="plugin/slick/slick.min.js"></script>
-		<script src="plugin/parallax/parallax.js"></script>
+		<!-- <script src="plugin/parallax/parallax.js"></script> -->
 		<script src="js/global.js"></script>
 		<script src="js/invite.js"></script>
 		<script>
 			$(function() {
-				var scene = document.getElementById('wkscene');
-				var parallax = new Parallax(scene);
+				//判斷是否為IE決定是否加載parallax.js效果
+				//此特效會造成input填寫功能失效
+				if (window.ActiveXObject || "ActiveXObject" in window){
+
+				}else {
+					$.getScript( "plugin/parallax/parallax.js", function( data, textStatus, jqxhr ) {
+						// console.log( data ); // Data returned
+						// console.log( textStatus ); // Success
+						// console.log( jqxhr.status ); // 200
+						// console.log( "Load was performed." );
+						var scene = document.getElementById('wkscene');
+						var parallax = new Parallax(scene);
+					});
+				}
 				//送出表單
 				$("#btnSubmit").click(function(event) {
 					cancelHandler(event)
@@ -74,7 +87,7 @@
 			</div>
 			<ul class="icon-box">
 				<li class="live"><a href="live.html"><img src="img/_mode/header/live.png"></a></li>
-				<li class="fb"><a href="#"><img src="img/_mode/header/fb.png"></a></li>
+				<li class="fb wk-fb-share"><img src="img/_mode/header/fb.png"></li>
 			</ul>
 			<ul class="page-link-box">
 				<li class="link1"><a href="index.html">求職主場</a></li>
@@ -94,7 +107,7 @@
 						<li class="li3 hide icon-box">
 							<div class="flex-box">
 								<span><a href="live.html"><img src="img/_mode/header/live.png"></a></span>
-								<span><a href="#"><img src="img/_mode/header/fb.png"></a></span>
+								<span class="wk-fb-share"><img src="img/_mode/header/fb.png"></span>
 							</div>
 						</li>
 					</ul>
@@ -120,7 +133,7 @@
 				<li><a href="#"><img src="img/_mode/anchor-box/icon2.png"><span>測驗案</span></a></li>
 				<li><a href="invite.html"><img src="img/_mode/anchor-box/icon3.png"><span>求才刊登</span></a></li>
 				<li><a href="live.html"><img src="img/_mode/anchor-box/icon4.png"><span>LIVE</span></a></li>
-				<li><a href="#"><img src="img/_mode/anchor-box/icon5.png"></a></li>
+				<li class="wk-fb-share"><img src="img/_mode/anchor-box/icon5.png"></li>
 			</ul>
 		</div>
 

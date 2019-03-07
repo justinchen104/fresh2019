@@ -1,0 +1,164 @@
+.gotop-outbox {
+	opacity: 0;
+	visibility: hidden;
+	z-index: 10;
+	position: fixed;
+	bottom: 100px;
+	right: 10px;
+	.trs(0.5s);
+	@media all and (max-width: 1600px) {
+		& {
+			right: 20px;
+		}
+	}
+	@media all and (max-width: 1200px) {
+		& {
+			top: auto;
+			bottom: 40px;
+			right: 20px;
+		}
+	}
+	@media all and (max-width: 800px) {
+		& {
+			bottom: 30px;
+			right: 10px;
+		}
+	}
+	.gotop-box {
+		.gotop-circle {
+			cursor: pointer;
+			position: relative;
+			cursor: pointer;
+			width: 132px;
+			height: 132px;
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-image: url("@{image}_mode/hintman/gotop.png");
+			@media all and (max-width: 1200px) {
+				& {
+					width: 100px;
+					height: 100px;
+				}
+			}
+			@media all and (max-width: 800px) {
+				& {
+					width: 70px;
+					height: 70px;
+				}
+			}
+		}
+		.gotop-arrow {
+			cursor: pointer;
+			width: 52px;
+			height: 71px;
+			position: absolute;
+			top: 0px;
+			right: 43px;
+			background-image: url("@{image}_mode/hintman/hintman-arrow.png");
+			.trs(0.5s);
+			@media all and (max-width: 1200px) {
+				& {
+					display: none;
+				}
+			}
+		}
+		.text-box {
+			position: absolute;
+			top: 27px;
+			right: 50px;
+			width: 50px;
+			height: 100px;
+			overflow: hidden;
+			border-radius: 60px 0px 0px 60px;
+			background-color: #fff;
+			z-index: -1;
+			box-shadow: #0000002e 1px 1px 10px;
+			.trs(0.5s);
+			@media all and (max-width: 1200px) {
+				& {
+					display: none;
+				}
+			}
+			span {
+				display: block;
+				color: #000;
+				width: max-content;
+				width: -moz-max-content;
+				font-size: 20px;
+				position: absolute;
+				top: 34px;
+				left: 30px;
+				.trs;
+			}
+		}
+		&:hover {
+			.text-box {
+				width: 330px;
+			}
+			.hintman-arrow {
+				top: -60px;
+			}
+		}
+	}
+}
+.gotop-outbox.show {
+	opacity: 1;
+	visibility: visible;
+	bottom: 80px;
+}
+
+.anchor-box {
+	display: none;
+	z-index: 10;
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	bottom: 0;
+	background-color: #fff;
+	@media all and (max-width: 800px) {
+		& {
+			display: block;
+		}
+	}
+	ul {
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+		position: relative;
+		li {
+			cursor: pointer;
+			float: left;
+			width: 25%;
+			height: 100%;
+			padding-top: 4px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img {
+				margin: 0 auto;
+			}
+			span {
+				display: block;
+				font-size: 12px;
+				color: #fff;
+				text-align: center;
+			}
+		}
+		li:nth-child(1) {
+			background-color: #F5A623;
+		}
+		li:nth-child(2) {
+			display: none;
+			background-color: #289428;
+		}
+		li:nth-child(3) {
+			background-color: #9b6a61;
+		}
+		li:nth-child(4) {
+			background-color: #d70500;
+		}
+		li:nth-child(5) {
+			background-color: #39579a;
+		}
+	}
+}
