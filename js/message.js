@@ -1,6 +1,6 @@
 $(function() {
     var customId = $("#customId").val(); // customId
-    var eventId = $("#eventId").val(); // eventId
+    var eventId = $("#eventId").val(); // eventId value
     var url = '/api/getMessageList?customId='+customId+'&event='+eventId;
     $.ajax({
         url: url,
