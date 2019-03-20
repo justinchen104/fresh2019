@@ -544,9 +544,6 @@ header .mobile-menu-out-box .bg-box ul.link-menu li.icon-box span {
   display: inline-block;
   font-size: 0;
 }
-header .mobile-menu-out-box .bg-box ul.link-menu li.icon-box span:first-child {
-  margin-right: 20px;
-}
 header .mobile-menu-out-box .bg-box ul.link-menu li.icon-box span.wk-fb-share {
   padding: 10px 0;
   cursor: pointer;
@@ -617,6 +614,9 @@ footer .copyright {
   100% {
     transform: translate3d(0, 0px, 0);
   }
+}
+body.quiz footer {
+  background-color: #bfb9a8;
 }
 .gotop-outbox {
   opacity: 0;
@@ -1896,8 +1896,7 @@ section {
   transition: all 0.3s ease;
 }
 .section2 .stage .com-jobs-box table.com-jobs td .join-btn:hover {
-  background-color: #fdcf00;
-  box-shadow: 0px 4px #f8b300;
+  transform: translate3d(0, -5px, 0);
 }
 .section2 .stage .com-jobs-box table.com-jobs td .join-btn a {
   display: block;
@@ -2846,7 +2845,8 @@ section {
 @media all and (max-width: 1300px) {
   .section6 .stage .qa-box .qa {
     width: 700px;
-    height: 95px;
+    min-height: 95px;
+    height: auto;
     padding: 12px 30px;
   }
 }
@@ -2879,7 +2879,7 @@ section {
   .section6 .stage .qa-box .qa .flex-box span {
     font-size: 18px;
     line-height: 22px;
-    max-height: 44px;
+    max-height: 66px;
     margin-bottom: 5px;
   }
 }

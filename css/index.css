@@ -544,9 +544,6 @@ header .mobile-menu-out-box .bg-box ul.link-menu li.icon-box span {
   display: inline-block;
   font-size: 0;
 }
-header .mobile-menu-out-box .bg-box ul.link-menu li.icon-box span:first-child {
-  margin-right: 20px;
-}
 header .mobile-menu-out-box .bg-box ul.link-menu li.icon-box span.wk-fb-share {
   padding: 10px 0;
   cursor: pointer;
@@ -617,6 +614,9 @@ footer .copyright {
   100% {
     transform: translate3d(0, 0px, 0);
   }
+}
+body.quiz footer {
+  background-color: #bfb9a8;
 }
 .gotop-outbox {
   opacity: 0;
@@ -3243,6 +3243,7 @@ section {
 .section3 .front-box ul.company li.level1 {
   display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
   cursor: pointer;
   width: 1000px;
@@ -3898,4 +3899,25 @@ section {
   .section3 .front-box .inset-box .company-detail-box .com-jobs-box table.com-jobs td.for-desktop {
     display: none;
   }
+}
+body.type-service .category-mobile-box .category {
+  margin-bottom: 0;
+}
+body.type-service .category-mobile-box .category-2,
+body.type-service .category-mobile-box .category-3 {
+  display: none;
+}
+body.type-financial .category-mobile-box .category {
+  margin-bottom: 0;
+}
+body.type-financial .category-mobile-box .category-1,
+body.type-financial .category-mobile-box .category-3 {
+  display: none;
+}
+body.type-technology .category-mobile-box .category {
+  margin-bottom: 0;
+}
+body.type-technology .category-mobile-box .category-1,
+body.type-technology .category-mobile-box .category-2 {
+  display: none;
 }

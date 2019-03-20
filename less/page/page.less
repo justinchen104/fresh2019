@@ -938,8 +938,7 @@ section {
 						box-shadow: 0px 4px #D6890A;
 						.trs;
 						&:hover {
-							background-color: #fdcf00;
-							box-shadow: 0px 4px #f8b300;
+							transform: translate3d(0,-5px,0);
 						}
 						a {
 							display: block;
@@ -1771,7 +1770,8 @@ section {
 				@media all and (max-width: 1300px) {
 					& {
 						width: 700px;
-						height: 95px;
+						min-height: 95px;
+						height: auto;
 						padding: 12px 30px;
 					}
 				}
@@ -1804,7 +1804,7 @@ section {
 							& {
 								font-size: 18px;
 								line-height: 22px;
-								max-height: 44px;
+								max-height: 66px;
 								margin-bottom: 5px;
 							}
 						}
