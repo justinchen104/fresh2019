@@ -7,7 +7,7 @@ $(function() {
 	},1000)
 
 	//直播倒數
-	$("#countdown-box").countdown("2019/03/20 12:30:00", function(event) {
+	$("#countdown-box").countdown("2019/03/29 12:30:00", function(event) {
 		if (event.elapsed) {
 			//進網頁時，時間已過期
 			//alert('already finish')
