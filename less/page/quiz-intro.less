@@ -1,0 +1,301 @@
+body.quiz {
+	background-color: #beb9a7;
+}
+.section1 {
+	width: 100%;
+	height: 950px;
+	position: relative;
+	overflow: hidden;
+	@media all and (max-width: 500px) {
+		& {
+			height: 680px;
+		}
+	}
+	.bg-box {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 1920px;
+		height: 1920px;
+		margin-top: -960px;
+		margin-left: -960px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-image: url("@{image}page/quiz-intro/section1-bg.jpg");
+		//animation: bgRotate 90s linear infinite;
+		@media all and (max-width: 500px) {
+			& {
+				top: 30%;
+				left: 50%;
+				width: 1000px;
+				height: 1000px;
+				margin-top: -500px;
+				margin-left: -500px;
+			}
+		}
+	}
+	@keyframes bgRotate {
+		0% { transform: rotate(0deg) }
+		100% { transform: rotate(360deg) }
+	}
+	.curtain-left {
+		z-index: 1;
+		width: 392px;
+		height: 1032px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-repeat: no-repeat;
+		background-image: url("@{image}page/quiz-intro/section1-curtain-left.png");
+		@media all and (max-width: 1400px) {
+			& { left: -50px; }
+		}
+		@media all and (max-width: 800px) {
+			& { display: none; }
+		}
+	}
+	.curtain-right {
+		z-index: 1;
+		width: 473px;
+		height: 1032px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-repeat: no-repeat;
+		background-image: url("@{image}page/quiz-intro/section1-curtain-right.png");
+		@media all and (max-width: 1400px) {
+			& { right: -120px; }
+		}
+		@media all and (max-width: 800px) {
+			& { display: none; }
+		}
+	}
+	.ribbon {
+		width: 100%;
+		height: 266px;
+		position: relative;
+		overflow: hidden;
+		position: absolute;
+		top: -80px;
+		background-repeat: no-repeat;
+		background-image: url("@{image}page/quiz-intro/section1-ribbon.png");
+		@media all and (max-width: 800px) {
+			& { background-size: contain; background-image: url("@{image}page/quiz-intro/section1-ribbon-mobile.png"); }
+		}
+		@media all and (max-width: 600px) {
+			& {
+				width: 600px;
+				height: 177px;
+				background-size: cover;
+				background-position: center;
+				background-image: url("@{image}page/quiz-intro/section1-ribbon-mobile.png");
+			}
+		}
+	}
+	.title-box {
+		z-index: 2;
+		position: relative;
+		top: 18%;
+		left: 50%;
+		margin-left: -18%;
+		@media all and (max-width: 1200px) {
+			& { margin-left: -26%; }
+		}
+		@media all and (max-width: 900px) {
+			& { margin-left: -35%; }
+		}
+		@media all and (max-width: 800px) {
+			& {
+				width: 100%;
+				padding-bottom: 85%;
+				margin: 0 auto;
+				top: 17%;
+				left: auto;
+			}
+		}
+		@media all and (max-width: 500px) {
+			& {
+				top: 8%;
+			}
+		}
+		.text {
+			width: 363px;
+			height: 183px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-repeat: no-repeat;
+			background-image: url("@{image}page/quiz-intro/section1-text.png");
+			@media all and (max-width: 800px) {
+				& {
+					width: 50%;
+					height: auto;
+					top: 2%;
+					left: 7%;
+					padding-bottom: 27%;
+					background-size: contain;
+					background-image: url("@{image}page/quiz-intro/section1-text-mobile1.png");
+				}
+			}
+			@media all and (max-width: 400px) {
+				& {
+					width: 60%;
+					height: auto;
+					top: 2%;
+					left: 7%;
+					padding-bottom: 28%;
+					background-size: contain;
+					background-image: url("@{image}page/quiz-intro/section1-text-mobile2.png");
+				}
+			}
+		}
+
+		.divination {
+			width: 318px;
+			height: 422px;
+			position: absolute;
+			top: -30px;
+			left: 270px;
+			background-repeat: no-repeat;
+			background-image: url("@{image}page/quiz-intro/section1-divination.png");
+			@media all and (max-width: 800px) {
+				& {
+					width: 40%;
+					height: auto;
+					top: -2%;
+					left: 45%;
+					padding-bottom: 53%;
+					background-size: contain;
+				}
+			}
+		}
+		.title {
+			width: 604px;
+			height: 277px;
+			position: absolute;
+			top: 230px;
+			left: -10px;
+			background-repeat: no-repeat;
+			background-image: url("@{image}page/quiz-intro/section1-title.png");
+			@media all and (max-width: 800px) {
+				& {
+					width: 80%;
+					height: auto;
+					top: 35%;
+					left: 9%;
+					padding-bottom: 37%;
+					background-size: contain;
+				}
+			}
+		}
+		.owl {
+			width: 80px;
+			height: 119px;
+			position: absolute;
+			top: 162px;
+			left: 80px;
+			background-repeat: no-repeat;
+			background-image: url("@{image}page/quiz-intro/section1-owl.png");
+			@media all and (max-width: 800px) {
+				& {
+					width: 10%;
+					height: auto;
+					top: 25%;
+					left: 23%;
+					padding-bottom: 15%;
+					background-size: contain;
+				}
+			}
+		}
+		.crystal-ball {
+			width: 178px;
+			height: 178px;
+			position: absolute;
+			top: 105px;
+			left: 155px;
+			background-repeat: no-repeat;
+			background-image: url("@{image}page/quiz-intro/section1-crystal-ball.png");
+			@media all and (max-width: 800px) {
+				& {
+					width: 25%;
+					height: auto;
+					top: 14%;
+					left: 28%;
+					padding-bottom: 25%;
+					background-size: contain;
+				}
+			}
+		}
+		.star-box {
+			width: 1019px;
+			height: 745px;
+			position: absolute;
+			top: -20px;
+			left: -285px;
+			background-repeat: no-repeat;
+			background-image: url("@{image}page/quiz-intro/section1-star.png");
+			@media all and (max-width: 800px) {
+				& {
+					width: 85%;
+					padding-bottom: 140%;
+					height: auto;
+					top: -22%;
+					left: 6%;
+					background-size: contain;
+					background-image: url("@{image}page/quiz-intro/section1-star-mobile.png");
+				}
+			}
+		}
+		.btn {
+			position: absolute;
+			top: 550px;
+			left: 180px;
+			@media all and (max-width: 800px) {
+				& {
+					top: 87%;
+					left: ~"calc(50% - 110px)";
+				}
+			}
+			@media all and (max-width: 500px) {
+				& {
+					top: 87%;
+					left: ~"calc(50% - 80px)";
+				}
+			}
+			a {
+				display: block;
+				margin: 0 auto;
+				width: 220px;
+				text-align: center;
+				color: #353535;
+				font-size: 22px;
+				font-weight: bold;
+				padding: 15px 20px;
+				border-radius: 10px;
+				box-shadow: 0px 4px 0 #D6890A;
+				background-color: #F5A623;
+				transform-origin: center;
+				animation: btnJump 1s ease infinite;
+				.trs;
+				@media all and (max-width: 500px) {
+					& {
+						width: 169px;
+						padding: 10px 20px;
+						font-size: 16px;
+					}
+				}
+				&:hover {
+					box-shadow: 0px 4px 0 #d2aa00;
+					background-color: #FBDD00;
+				}
+			}
+
+		}
+	}
+}
+@keyframes btnJump {
+	0% { transform: translate3d(0,0,0); }
+	50% { transform: translate3d(0,-20px,0px); }
+	100% { transform: translate3d(0,0,0); }
+}
