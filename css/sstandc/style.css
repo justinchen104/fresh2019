@@ -1,0 +1,625 @@
+@import url("bootstrap-reboot.min.css");
+@import url("bootstrap-grid.min.css");
+@import url("animations.css");
+
+html, body {
+  font-family: Arial, "微軟正黑體" !important;
+  font-size: 16px;
+}
+
+body {
+  background: #314a7d;
+  padding-bottom: 50px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+#floating {
+  position: fixed;
+  right: 15px;
+  top: 50%;
+  margin-top: -172px;
+  width: 118px;
+  z-index: 999;
+}
+#floating>ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#floating>ul img {
+  display: block;
+  width: 100%;
+}
+
+header.top {
+  height: 83px;
+  padding: 0 100px;
+  padding-top: 12px;
+  background: url(../../img/page/sstandc/header-bg.png) #fff left top repeat-x;
+  background-size: auto 12px;
+}
+header.top .logo>img {
+  max-width: 398px;
+  width: 100%;
+}
+header.top #menu {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+header.top #menu>li {
+  float: left;
+  padding: 0 1em;
+}
+header.top #menu>li>a {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+}
+
+.slicknav_menu {
+  display: none;
+}
+
+.section-1 {
+  position: relative;
+  z-index: 40;
+  width: 100%;
+  overflow: hidden;
+}
+.section-1 .o1 {
+  position: absolute;
+  top: 0;
+  left: 18.541666%;
+  margin-top: 18.28125%;
+  width: 32.135416%;
+}
+.section-1 .o2 {
+  position: absolute;
+  top: 0;
+  left: 45%;
+  margin-top: 9.270833%;
+  width: 36.458333%;
+}
+.section-1 .o3, .section-1 .o4 {
+  position: absolute;
+  top: 0;
+  left: 58.281249%;
+  margin-top: 50.15625%;
+  width: 11.458333%;
+}
+.section-1 .o3:before, .section-1 .o4:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  display: block;
+  background: url(../../img/page/sstandc/b1-4.png) no-repeat;
+  background-size: 100% 100%;
+  z-index: 10;
+}
+.section-1 .o4 {
+  left: 71.041666%;
+}
+.section-1 .o5 {
+  position: absolute;
+  top: 0;
+  left: 21.875%;
+  margin-top: 8.333333%;
+  width: 22%;
+}
+
+.section-group {
+  z-index: 45;
+  padding-top: .1px;
+  position: relative;
+  background-color: #dad3c8;
+}
+.section-group:before {
+  display: block;
+  content: '';
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin-top: -4.7875%;
+  padding-bottom: 237.1875%;
+  background: url(../../img/page/sstandc/group-bg-1.png)center top no-repeat;
+  background-size: 100% auto;
+}
+.section-group:after {
+  display: block;
+  content: '';
+  position: absolute;
+  padding-top: 127.239583%;
+  z-index: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-bottom: -7.8125%;
+  background: url(../../img/page/sstandc/group-bg-2.png) center bottom no-repeat;
+  background-size: 100% auto;
+}
+.section-group>div {
+  position: relative;
+  z-index: 10;
+}
+
+.section-2 {
+  margin-top: -8.3333333%;
+  margin-bottom: 6.25%;
+}
+.section-2 .boy, .section-2 .girl {
+  position: relative;
+}
+.section-2 .girl {
+  margin-top: -1.333333%;
+}
+.section-2 .o1, .section-2 .o2 {
+  position: absolute;
+  top: 0;
+}
+.section-2 .o1 {
+  left: 34.5%;
+  margin-top: 5.583333%;
+  width: 56.999999%;
+}
+.section-2 .o2 {
+  left: 12.666666%;
+  margin-top: 10.416666%;
+  width: 50.833333%;
+}
+
+.section-3 {
+  margin-bottom: 4.75%;
+}
+.section-3>div {
+  position: absolute;
+  top: 0;
+}
+.section-3 .text {
+  position: absolute;
+  top: 0;
+}
+.section-3 .o1 {
+  left: 2.583333%;
+  margin-top: 28.666666%;
+  width: 34%;
+}
+.section-3 .o1 .text {
+  left: 90.686274%;
+  margin-top: 12.5%;
+  width: 97.549019%;
+}
+.section-3 .o2 {
+  right: -1.666666%;
+  margin-top: 31%;
+  width: 38.833333%;
+}
+.section-3 .o2 .text {
+  right: 88.914163%;
+  margin-top: 84.120171%;
+  width: 86.480686%;
+}
+.section-3 .o2 .text.t1 {
+  z-index: 10;
+}
+.section-3 .o2>img.w-100 {
+  position: relative;
+  z-index: 5;
+}
+.section-3 .o2 .text.t2 {
+  z-index: 0;
+}
+.section-3 .o3 {
+  left: 6.666666%;
+  margin-top: 102.583333%;
+  width: 45.75%;
+}
+.section-3 .o3 .text {
+  left: 102.185792%;
+  margin-top: 8.925318%;
+  width: 88.706739%;
+}
+.section-3 .o4 {
+  left: 47.166666%;
+  margin-top: 132.166666%;
+  width: 48.833333%;
+}
+.section-3 .o4 .text {
+  right: 92.320819%;
+  margin-top: 65.52901%;
+  width: 74.40273%;
+}
+
+.section-4 .title {
+  margin-bottom: 2.5%;
+}
+.section-4 .item {
+  position: relative;
+  margin-bottom: 9.166666%;
+}
+.section-4 .item img.q {
+  width: 84.583333%;
+  display: block;
+}
+.section-4 .item img.a {
+  width: 74.416666%;
+  right: 1.666666%;
+  top: 0;
+  margin-top: 13.75%;
+  display: block;
+  position: absolute;
+}
+.section-4 .item img.line {
+  bottom: 0;
+  margin-bottom: -15.833333%;
+  position: absolute;
+}
+.section-4 .o1 {
+  padding-bottom: 15%;
+}
+.section-4 .o2 {
+  padding-bottom: 15.833333%;
+}
+.section-4 .o3 {
+  padding-bottom: 13.333333%;
+}
+.section-4 .o4 {
+  padding-bottom: 22.583333%;
+}
+
+.section-5 {
+  background-color: #3ca0cc;
+  background-image: url(../../img/page/sstandc/b5-3.png), url(../../img/page/sstandc/b5-4.png);
+  background-position: center 12.1875%, center bottom;
+  background-size: 100% auto, 100% auto;
+  background-repeat: no-repeat, no-repeat;
+  position: relative;
+  z-index: 50;
+  padding-top: .1px;
+}
+.section-5:before {
+  content: '';
+  display: block;
+  margin-top: -4.6%;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 4.6875%;
+  background: url(../../img/page/sstandc/b5-2.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  z-index: 0;
+}
+.section-5>.container {
+  position: relative;
+  z-index: 5;
+  margin-top: -3.645833%;
+  padding-bottom: 15px;
+}
+.section-5 .container>p {
+  padding: 0 1.5%;
+  margin: 0;
+  text-align: right;
+  color: #fff;
+}
+.section-5 .o1 {
+  width: 89.25%;
+  margin: auto;
+  margin-bottom: 1.25%;
+}
+.section-5 .o1>div {
+  padding: 0 1.120448%;
+}
+.section-5 .o2 {
+  padding-left: 3.916666%;
+}
+.section-5 .o2>div:last-child {
+  padding: 0 1.75%;
+  padding-top: 5.166666%;
+}
+.section-5 .o2 img.sale {
+  margin-bottom: 6.838905%;
+}
+.section-5 .o3 {
+  position: relative;
+  margin-top: -2.75%;
+  margin-bottom: 4.166666%;
+}
+.section-5 .o3 .list {
+  position: absolute;
+  width: 79%;
+  left: 4.833333%;
+  top: 0;
+  margin-top: 9.75%;
+}
+.section-5 .o3 .list>div {
+  padding: 0 2.012048%;
+}
+.section-5 .btn img:first-child {
+  -webkit-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+}
+.section-5 .btn:hover img:first-child {
+  -webkit-transform: translateY(8px);
+          transform: translateY(8px);
+}
+
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  header.top {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  header.top {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  header.top .logo>img {
+    max-width: 320px;
+  }
+  header.top #menu>li {
+    padding: 0 .5em;
+  }
+  header.top #menu>li>a {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  body {
+    padding-bottom: 13.666666%;
+  }
+
+  .floating-m {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 990;
+  }
+
+  header.top {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  header.top .logo {
+    max-width: 290px;
+  }
+
+  .section-group {
+    background: none;
+  }
+  .section-group:before, .section-group:after {
+    display: none;
+  }
+
+  .section-2m {
+    padding-top: .1px;
+    margin-top: -2.5%;
+    background: url(../../img/page/sstandc/b2m-1.png) center top no-repeat;
+    background-size: 100% auto;
+    padding-bottom: 39.166666%;
+  }
+  .section-2m .title {
+    margin-top: -7%;
+    margin-bottom: 6.666666%;
+  }
+  .section-2m .o1 {
+    margin-bottom: 5.583333%;
+  }
+
+  .section-3m {
+    padding-top: .1px;
+    padding-bottom: 2%;
+    background: url(../../img/page/sstandc/b3m-6.png) #fff center bottom no-repeat;
+    background-size: 100% auto;
+  }
+  .section-3m .title {
+    margin-top: -32.5%;
+    margin-bottom: 2.25%;
+  }
+  .section-3m .o2 {
+    margin-top: -45%;
+  }
+  .section-3m .o3 {
+    margin-top: -1%;
+  }
+  .section-3m .o4 {
+    margin-top: -21.333333%;
+  }
+
+  .section-4m {
+    background: url(../../img/page/sstandc/b4m-1.png) #ded8ce center bottom no-repeat;
+    background-size: 100% auto;
+    padding-top: 8.166666%;
+    padding-bottom: 11.5%;
+    margin-top: -1px;
+  }
+  .section-4m .title {
+    margin-bottom: 2.5%;
+  }
+  .section-4m .o2 {
+    margin-bottom: -1.25%;
+  }
+  .section-4m .o3 {
+    margin-bottom: -1.25%;
+  }
+  .section-4m .o4 {
+    margin-bottom: -1.25%;
+  }
+
+  .section-5m {
+    padding-top: .1px;
+    background: url(../../img/page/sstandc/b5m-12.png) #3ca0cc center bottom no-repeat;
+    background-size: 100% auto;
+    position: relative;
+    z-index: 50;
+  }
+  .section-5m:before {
+    content: '';
+    display: block;
+    margin-top: -2.843333%;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    padding-bottom: 2.833333%;
+    background: url(../../img/page/sstandc/b5m-13.png) no-repeat;
+    background-size: 100% 100%;
+  }
+  .section-5m .title {
+    margin-top: -9.833333%;
+    margin-bottom: 4.75%;
+  }
+  .section-5m .o1 {
+    margin-bottom: 3.916666%;
+  }
+  .section-5m .o2 {
+    margin: 0 auto;
+    width: 90.666666%;
+    margin-bottom: 6.5%;
+  }
+  .section-5m .o2>div {
+    padding: 1%;
+  }
+  .section-5m .o3 {
+    margin: 0 auto;
+    margin-bottom: 10.583333%;
+    width: 72.833333%;
+    display: block;
+  }
+  .section-5m .o4 {
+    position: relative;
+    margin-bottom: 5.25%;
+  }
+  .section-5m .o4 .step3 {
+    position: absolute;
+    width: 69.5%;
+    left: 12.083333%;
+    padding-top: 13.75%;
+  }
+  .section-5m .o4 .step3 img {
+    margin-bottom: 8.153477%;
+  }
+  .section-5m>p {
+    text-align: center;
+    font-size: .8rem;
+    color: #fff;
+    padding: 15px 0;
+  }
+
+  #floating {
+    display: none!important;
+  }
+
+  .bars {
+    width: 30px;
+    height: 30px;
+  }
+
+  .menu-m {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    height: 0;
+    left: 0;
+    padding-top: 30%;
+    background: url(../../img/page/sstandc/header-bg.png) left top repeat-x,
+                url(../../img/page/sstandc/mobile-menu-bg.png) #fff left bottom repeat-x;
+    background-size: auto 12px,
+                      auto 23.45%;
+    overflow: hidden;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+  }
+  .menu-m.show {
+    height: 100vh;
+    opacity: 1;
+    z-index: 99999;
+  }
+  .menu-m .close {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    font-size: 30px;
+    padding: 0 10px;
+    color: #f77d09;
+  }
+  header.top .menu-m #menu>li {
+    float: none;
+    text-align: center;
+    padding: .65em 0;
+  }
+  header.top .menu-m #menu>li a {
+    font-size: 20px;
+  }
+
+
+}
+
+@media (max-width: 575.98px) {  }
+
+
+.slide-top {
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) 1s infinite alternate-reverse both;
+	        animation: slide-top 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) 1s infinite alternate-reverse both;
+}
+ @-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  20% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  20% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}

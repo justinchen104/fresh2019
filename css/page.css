@@ -430,7 +430,7 @@ header .mobile-menu-out-box.hide .bg-box {
 header .mobile-menu-out-box {
   opacity: 1;
   visibility: visible;
-  z-index: 11;
+  z-index: 1000;
   position: fixed;
   top: 0;
   left: 0;
@@ -780,14 +780,13 @@ body.quiz footer {
   background-color: #F5A623;
 }
 .anchor-box ul li:nth-child(2) {
-  display: none;
-  background-color: #289428;
+  background-color: #d70500;
 }
 .anchor-box ul li:nth-child(3) {
-  background-color: #9b6a61;
+  background-color: #579891;
 }
 .anchor-box ul li:nth-child(4) {
-  background-color: #d70500;
+  background-color: #9b6a61;
 }
 .anchor-box ul li:nth-child(5) {
   background-color: #39579a;
