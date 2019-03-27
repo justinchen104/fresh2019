@@ -53,6 +53,9 @@ $(function() {
 			setTimeout(function() {
 				$(".link-menu .li4").removeClass('hide')
 			},2200)
+			setTimeout(function() {
+				$(".link-menu .li5").removeClass('hide')
+			},2700)
 		}
 	});
 	//控制關閉手機版header選單
