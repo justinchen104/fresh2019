@@ -527,7 +527,7 @@ $(function() {
 
 	//點選公司logo後出現該公司簡介、職缺
 	$("ul.company .com").click(function(event) {
-		cancelHandler(event);
+		//cancelHandler(event);
 		specialOption1 = specialOption1+1
 		$("ul.company .com").removeClass('active')
 		$(this).addClass('active');
