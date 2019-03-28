@@ -27,15 +27,34 @@
 		<link rel="stylesheet" type="text/css" href="plugin/slick/slick.css"/>
 		<link rel="stylesheet" href="plugin/aos/aos.css">
 		<link rel="stylesheet" href="plugin/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="plugin/modal-video/modal-video.min.css">
 		<link rel="stylesheet" href="css/page.css">
 		<script src="plugin/jquery/1.9.1.min.js"></script>
 		<script src="plugin/jqueryui/1.10.3.min.js"></script>
 		<script src="plugin/aos/aos.js"></script>
 		<script src="plugin/slick/slick.min.js"></script>
+		<script src="plugin/modal-video/jquery-modal-video.min.js"></script>
 		<script src="js/global.js"></script>
 		<script src="js/page.js"></script>
+		<script src="js/submit.js"></script>
+		<script src="js/message.js"></script>
+		<script>
+			$(function() {
+				//youtube影片彈窗
+				$(".js-video-button").modalVideo({
+					youtube:{
+						controls:1,
+						nocookie: true,
+						autoplay:1,
+						loop: 1,
+						mute: 1,
+						playlist: 'CHQA8G6igg0'
+					}
+				});
+			})
+		</script>
 	</head>
-	<body class="no-message-board">
+	<body>
 		<header>
 			<div class="bg-box"></div>
 			<div class="logo-box">
@@ -75,6 +94,7 @@
 				</div>
 			</div>
 		</header>
+
 		<!-- hintman區塊 -->
 		<div class="gotop-outbox">
 			<div class="gotop-box">
@@ -108,15 +128,13 @@
 					<div class="logo"><img src="img/page/page/company-img/105/logo-001.png"></div>
 					<div class="frame"></div>
 					<div class="title">
-						<span class="text1">遠傳5G菁英計畫-邀您打造萬物互聯新時代</span>
-						<span class="text2">創新升級，轉型再造！我們已準備好迎接5G數位新時代，邀請想成為大人物的您一同加入</span>
+						<span class="text1">愛在何嘉仁，放大你的愛，讓愛無限，把夢實現</span>
+						<span class="text2">多元的舞台、多國文化的工作環境、多面向的訓練升遷、精采多姿的職場生涯!</span>
 					</div>
 					<div class="img-box">
-						<img src="img/page/page/company-img/105/s1-001.png">
-
-
-
-
+						<!-- <img src="img/page/page/company-img/001/s1-001.png"> -->
+						<div class="js-video-button" data-video-id="CHQA8G6igg0"></div>
+						<iframe src="https://www.youtube.com/embed/CHQA8G6igg0?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&enablejsapi=1&playlist=CHQA8G6igg0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
 					</div>
 				</div>
 			</div>
@@ -197,22 +215,52 @@
 									<!-- <td colspan="4"><i></i>經營</td> -->
 								</tr>
 								<tr>
-									<td>大人物科技菁英-數位科技開發應用</td>
-									<td class="for-desktop">不限科系，資工、資訊、資管等相關科系尤佳，或對學習程式有高度熱情者。</td>
-									<td class="for-desktop">台北</td>
-									<td><span class="join-btn"><a class="js-monitor-params" href="http://www.104.com.tw/jb/service/ad/TransferAddress?trnid=adn_49375" target="_blank">我要應徵</a></span></td>
+									<td>(國小部)美語教學儲備幹部</td>
+									<td class="for-desktop">不限</td>
+									<td class="for-desktop">台灣全區</td>
+									<td><span class="join-btn"><a class="js-monitor-params" href="http://www.104.com.tw/jb/service/ad/TransferAddress?trnid=adn_50235" target="_blank">我要應徵</a></span></td>
 								</tr>
 								<tr>
-									<td>大人物科技菁英-電信網路規劃</td>
-									<td class="for-desktop">不限科系，電子、電機、電信、通訊等相關科系尤佳，或對5G網路規劃應用有研究涉略者。</td>
-									<td class="for-desktop">台北</td>
-									<td><span class="join-btn"><a class="js-monitor-params" href="http://www.104.com.tw/jb/service/ad/TransferAddress?trnid=adn_49379" target="_blank">我要應徵</a></span></td>
+									<td>(幼兒部)幼兒教學儲備幹部</td>
+									<td class="for-desktop">幼教/幼保相關科系</td>
+									<td class="for-desktop">台灣全區</td>
+									<td><span class="join-btn"><a class="js-monitor-params" href="http://www.104.com.tw/jb/service/ad/TransferAddress?trnid=adn_50237" target="_blank">我要應徵</a></span></td>
+								</tr>
+								<tr>
+									<td>(國小部)安親課輔教師</td>
+									<td class="for-desktop">不限</td>
+									<td class="for-desktop">台灣全區</td>
+									<td><span class="join-btn"><a class="js-monitor-params" href="http://www.104.com.tw/jb/service/ad/TransferAddress?trnid=adn_50239" target="_blank">我要應徵</a></span></td>
+								</tr>
+								<tr>
+									<td>教育諮詢行政專員</td>
+									<td class="for-desktop">不限</td>
+									<td class="for-desktop">台灣全區</td>
+									<td><span class="join-btn"><a class="js-monitor-params" href="http://www.104.com.tw/jb/service/ad/TransferAddress?trnid=adn_50241" target="_blank">我要應徵</a></span></td>
+								</tr>
+								<tr>
+									<td>(餐飲體系)外場服務儲備幹部</td>
+									<td class="for-desktop">不限</td>
+									<td class="for-desktop">台北市中山區</td>
+									<td><span class="join-btn"><a class="js-monitor-params" href="http://www.104.com.tw/jb/service/ad/TransferAddress?trnid=adn_50243" target="_blank">我要應徵</a></span></td>
+								</tr>
+								<tr>
+									<td>(總處)英文教材編輯</td>
+									<td class="for-desktop">英美語文相關科系、教育相關科系</td>
+									<td class="for-desktop">台北市中山區</td>
+									<td><span class="join-btn"><a class="js-monitor-params" href="http://www.104.com.tw/jb/service/ad/TransferAddress?trnid=adn_50245" target="_blank">我要應徵</a></span></td>
+								</tr>
+								<tr>
+									<td>(總處)財務會計助理 / 工讀生</td>
+									<td class="for-desktop">商學相關科系</td>
+									<td class="for-desktop">台北市中山區</td>
+									<td><span class="join-btn"><a class="js-monitor-params" href="http://www.104.com.tw/jb/service/ad/TransferAddress?trnid=adn_50247" target="_blank">我要應徵</a></span></td>
 								</tr>
 								<tr class="last-child">
-									<td>數位時代行銷菁英</td>
-									<td class="for-desktop">不限科系，行銷、數位媒體設計相關科系尤佳，或對數位行銷有高度興趣者。</td>
-									<td class="for-desktop">台北</td>
-									<td><span class="join-btn"><a class="js-monitor-params" href="http://www.104.com.tw/jb/service/ad/TransferAddress?trnid=adn_49383" target="_blank">我要應徵</a></span></td>
+									<td>(總處)行政專員</td>
+									<td class="for-desktop">不限</td>
+									<td class="for-desktop">台北市中山區</td>
+									<td><span class="join-btn"><a class="js-monitor-params" href="http://www.104.com.tw/jb/service/ad/TransferAddress?trnid=adn_50249" target="_blank">我要應徵</a></span></td>
 								</tr>
 
 							</tbody>
@@ -240,11 +288,21 @@
 				<div class="inbox">
 					<div class="img-box">
 						<img src="img/page/page/company-img/105/s3-banner-001.png">
+						<img src="img/page/page/company-img/105/s3-banner-002.png">
+						<img src="img/page/page/company-img/105/s3-banner-003.png">
+						<img src="img/page/page/company-img/105/s3-banner-004.png">
+						<img src="img/page/page/company-img/105/s3-banner-005.png">
+
 					</div>
 					<div class="text-box">
-						<!-- <h3>零售龍頭，為消費者提供更多更新更好的服務。</h3> -->
-						<p>遠傳啟動2020年數位化轉型計畫，擬定『創新升級，轉型再造』目標，以『大人物』做為轉型及升級的核心技術與能力。『大數據』、『人工智慧』及『物聯網』三者之間相輔相成，以智慧城市、智慧停車、智慧電表、智慧醫療、智慧家庭、智慧建築等開發應用，帶動數位轉型。以『大數據』提升用戶網路體驗，應用在公共交通規劃，協助政府與企業增加營收並提升效能；以『人工智慧』預測網路效能及自動調整，用於智慧網路營運、智慧基站管理；在『物聯網』價值鏈向上升級，積極推動物聯網產業發展策略聯盟，成立『遠傳5G先鋒隊』，引領車聯網產業起飛。
-						遠傳已準備好迎接嶄新5G數位時代，從電信公司轉型到新經濟數位服務公司，我們邀請想成為『大人物』的您，一同打造萬物互聯新時代</p>
+						<h3>多元文化工作環境，夥伴之間就像家人的感覺</h3>
+						<p>何嘉仁國際文教團隊，成立於1983年，30餘年致力於提供優質教育服務及學習環境，包括托嬰中心、幼兒園、親子館、安親課輔及美語補習班等；更為了顧及孩子們的飲食安全，跨領域發展烘焙及餐飲事業，為社會上提供健康飲食盡一份心力！</br>
+                        教育源自於愛，30多年來，我們一步一腳印，更努力再突破再創新，持續將愛與歡樂散播出去；歡迎青春夥伴們加入何嘉人大家庭！</br>
+                        我們提供…</br>
+                        多元的舞台，充滿不一樣的機會與挑戰；</br>
+                        多文化的環境，與來自不同國家的夥伴合作；</br>
+                        多面向的升遷、訓練，讓你學習和團隊一起成長</br>
+                        教育源自於愛，成為我們的一員，讓愛無限，把夢實現</p>
 					</div>
 				</div>
 			</div>
@@ -258,64 +316,70 @@
 			<div class="stage">
 				<div class="title"></div>
 				<div class="wood-box">
-					<div class="wood wood1">
+					<div class="wood wood2">
 						<div class="text-box">
 							<ul>
-								<li>具競爭力的薪資</li>
-								<li>依員工表現及公司營運調薪</li>
-								<li>每月通話費用補助</li>
+								<li>優質的薪資制度</li>
+								<li>完整的福利制度</li>
+								<li>員工在職進修優惠</li>
+								<li>書店/烘焙/餐廳員工優惠</li>
 
 							</ul>
 						</div>
 					</div>
-					<div class="wood wood2">
+					<div class="wood wood4">
 						<div class="text-box">
 							<ul>
-								<li>多元福利措施</li>
-								<li>友善職場環境</li>
-								<li>員工免費及眷屬自費團保</li>
-
+								<li>新進/在職教育訓練</li>
+								<li>職能講座/成長營</li>
+								<li>海內外培訓</li>
+								<li>優良教師表揚</li>
+								<li>管理職級晉升</li>
 							</ul>
 						</div>
 					</div>
 					<div class="wood wood3">
 						<div class="text-box">
 							<ul>
-								<li>多元社團</li>
-								<li>員工旅遊活動</li>
-								<li>員工優惠手機選購方案</li>
-
+								<li>員工電影欣賞會</li>
+								<li>員工國內外旅遊</li>
+								<li>不定期聚餐</li>
+								<li>團隊年終尾牙</li>
 							</ul>
 						</div>
 					</div>
 				</div>
 				<div class="wood-box-mobile">
-					<div class="wood wood1">
+					<div class="wood wood2">
 						<span class="text-box">
 							<ul>
-								<li>具競爭力的薪資</li>
-								<li>依員工表現及公司營運調薪</li>
-								<li>每月通話費用補助</li>
+								<li>優質的薪資制度</li>
+								<li>完整的福利制度</li>
+								<li>員工在職進修優惠</li>
+								<li>書店/烘焙/餐廳員工優惠</li>
 
 							</ul>
 						</span>
 					</div>
-					<div class="wood wood2">
+					<div class="wood wood4">
 						<span class="text-box">
 							<ul>
-								<li>多元福利措施</li>
-								<li>友善職場環境</li>
-								<li>員工免費及眷屬自費團保</li>
+								<li>新進/在職教育訓練</li>
+								<li>職能講座/成長營</li>
+								<li>海內外培訓</li>
+								<li>優良教師表揚</li>
+								<li>管理職級晉升</li>
 							</ul>
 						</span>
 					</div>
 					<div class="wood wood3">
 						<span class="text-box">
 							<ul>
-								<li>多元社團</li>
-								<li>員工旅遊活動</li>
-								<li>員工優惠手機選購方案</li>
-
+								<li>員工電影欣賞會</li>
+								<li>員工國內外旅遊</li>
+								<li>不定期聚餐</li>
+								<li>團隊年終尾牙</li>
+							</ul>
 						</span>
 					</div>
 				</div>
@@ -334,19 +398,8 @@
 				<div class="card-box">
 					<span class="card expired">
 						<span class="detail">
-							<span>03/05(二)</span>
-							<span>中央大學</span>
-							<span>
-								<span>企業說明會</span>
-								<span></span>
-								<span></span>
-							</span>
-						</span>
-					</span>
-					<span class="card">
-						<span class="detail">
-							<span>03/09(六)</span>
-							<span>台灣大學</span>
+							<span>03/16(六)</span>
+							<span>清華大學</span>
 							<span>
 								<span>徵才博覽會</span>
 								<span></span>
@@ -356,62 +409,21 @@
 					</span>
 					<span class="card">
 						<span class="detail">
-							<span>03/10(日)</span>
-							<span>交通大學</span>
+							<span>3/20(三)</span>
+							<span>康寧大學</span>
 							<span>
 								<span>徵才博覽會</span>
 								<span></span>
+								<span></span>
 							</span>
 						</span>
 					</span>
 					<span class="card">
 						<span class="detail">
-							<span>03/10(日)</span>
-							<span>成功大學</span>
+							<span>03/22(五)</span>
+							<span>長庚科技大學</span>
 							<span>
 								<span>徵才博覽會</span>
-								<span></span>
-							</span>
-						</span>
-					</span>
-					<span class="card">
-						<span class="detail">
-							<span>03/13(三)</span>
-							<span>中原大學</span>
-							<span>
-								<span>企業說明會</span>
-								<span></span>
-							</span>
-						</span>
-						</span>
-					<span class="card">
-						<span class="detail">
-							<span>03/18(一)</span>
-							<span>台灣大學</span>
-							<span>
-								<span>企業說明會</span>
-								<span></span>
-							</span>
-						</span>
-					</span>
-					<span class="card">
-						<span class="detail">
-							<span>03/19(二)</span>
-							<span>輔仁大學</span>
-							<span>
-								<span>企業說明會</span>
-								<span></span>
-								<span></span>
-							</span>
-						</span>
-					</span>
-					<span class="card">
-						<span class="detail">
-							<span>3/21(四)</span>
-							<span>元智大學</span>
-							<span>
-								<span>企業說明會</span>
-								<span></span>
 								<span></span>
 							</span>
 						</span>
@@ -419,14 +431,227 @@
 					<span class="card">
 						<span class="detail">
 							<span>03/26(二)</span>
-							<span>台灣科技大學</span>
+							<span>中華大學</span>
 							<span>
-								<span>企業說明會</span>
+								<span>徵才博覽會</span>
+								<span></span>
 								<span></span>
 							</span>
 						</span>
 					</span>
-
+					<span class="card">
+						<span class="detail">
+							<span>3/27(三)</span>
+							<span>台北大學</span>
+							<span>
+								<span>徵才博覽會</span>
+								<span></span>
+								<span></span>
+							</span>
+						</span>
+					</span>
+					<span class="card">
+						<span class="detail">
+							<span>3/27(三)</span>
+							<span>靜宜大學</span>
+							<span>
+								<span>徵才博覽會</span>
+								<span></span>
+								<span></span>
+							</span>
+						</span>
+					</span>
+					<span class="card">
+						<span class="detail">
+							<span>3/28(四)</span>
+							<span>明新科技大學</span>
+							<span>
+								<span>徵才博覽會</span>
+								<span></span>
+							</span>
+						</span>
+					</span>
+					<span class="card">
+						<span class="detail">
+							<span>3/28(四)</span>
+							<span>東海大學</span>
+							<span>
+								<span>徵才博覽會</span>
+								<span></span>
+								<span></span>
+							</span>
+						</span>
+					</span>
+					<span class="card">
+						<span class="detail">
+							<span>4/10(三)</span>
+							<span>淡江大學</span>
+							<span>
+								<span>徵才博覽會</span>
+								<span></span>
+								<span></span>
+							</span>
+						</span>
+					</span>
+					<span class="card">
+						<span class="detail">
+							<span>04/12(五)</span>
+							<span>東吳大學(城中部)</span>
+							<span>
+								<span>徵才說明會</span>
+								<span></span>
+							</span>
+						</span>
+					</span>
+					<span class="card">
+						<span class="detail">
+							<span>04/19(五)</span>
+							<span>馬偕護專</span>
+							<span>
+								<span>徵才博覽會</span>
+								<span></span>
+								<span></span>
+							</span>
+						</span>
+					</span>
+					<span class="card">
+						<span class="detail">
+							<span>04/23(二)</span>
+							<span>吳鳳科技大學</span>
+							<span>
+								<span>徵才博覽會</span>
+								<span></span>
+								<span></span>
+							</span>
+						</span>
+					</span>
+					<span class="card">
+						<span class="detail">
+							<span>04/24(三)</span>
+							<span>世新大學</span>
+							<span>
+								<span>徵才博覽會</span>
+								<span></span>
+								<span></span>
+							</span>
+						</span>
+					</span>
+					<span class="card">
+						<span class="detail">
+							<span>04/24(三)</span>
+							<span>經國健康管理學院</span>
+							<span>
+								<span>徵才博覽會</span>
+								<span></span>
+							</span>
+						</span>
+					</span>
+					<span class="card">
+						<span class="detail">
+							<span>04/24(三)</span>
+							<span>輔仁大學</span>
+							<span>
+								<span>(外語學院)</span>
+								<span>徵才博覽會</span>
+								<span></span>
+							</span>
+						</span>
+					</span>
+					<span class="card">
+						<span class="detail">
+							<span>04/29(一)</span>
+							<span>東吳大學(雙溪部)</span>
+							<span>
+								<span>徵才說明會</span>
+								<span></span>
+								<span></span>
+							</span>
+						</span>
+					</span>
+					<span class="card">
+						<span class="detail">
+							<span>04/30(二)</span>
+							<span>朝陽科技大學</span>
+							<span>
+								<span>徵才博覽會</span>
+								<span></span>
+							</span>
+						</span>
+					</span>
+					<span class="card">
+						<span class="detail">
+							<span>05/02(四)</span>
+							<span>景文科技大學</span>
+							<span>
+								<span>徵才博覽會</span>
+								<span></span>
+								<span></span>
+							</span>
+						</span>
+					</span>
+					<span class="card">
+						<span class="detail">
+							<span>05/07(二)</span>
+							<span>文化大學</span>
+							<span>
+								<span>徵才博覽會</span>
+								<span></span>
+								<span></span>
+							</span>
+						</span>
+					</span>
+					<span class="card">
+						<span class="detail">
+							<span>05/08(三)</span>
+							<span>銘傳大學</span>
+							<span>
+								<span>(桃園校區)</span>
+								<span>徵才博覽會</span>
+								<span></span>
+							</span>
+						</span>
+					</span>
+					<span class="card">
+						<span class="detail">
+							<span>05/08(三)</span>
+							<span>文藻外語大學</span>
+							<span>
+								<span>徵才博覽會</span>
+								<span></span>
+							</span>
+						</span>
+					</span>
+					<span class="card">
+						<span class="detail">
+							<span>05/09(四)</span>
+							<span>銘傳大學</span>
+							<span>
+								<span>(台北校區)</span>
+								<span>徵才博覽會</span>
+								<span></span>
+							</span>
+						</span>
+					</span>
+					<span class="card">
+						<span class="detail">
+							<span>05/15(三)</span>
+							<span>南亞技術學院</span>
+							<span>
+								<span>徵才博覽會</span>
+								<span></span>
+							</span>
+						</span>
+					</span>
+					<span class="card">
+						<span class="detail">
+							<span>05/29(三)</span>
+							<span>亞洲大學</span>
+							<span>
+								<span>徵才博覽會</span>
+								<span></span>
+								<span></span>
+							</span>
+						</span>
 					</span>
 
 				</div>
@@ -453,39 +678,36 @@
 				<div class="qa-box">
 					<span class="qa qa1">
 						<span class="flex-box">
-							<span class="question">Q : 如果不是資訊相關科系畢業，也沒有電信科技業工作經驗，是否可以申請？</span>
-							<span class="answer">A : 可以，只要您具備大學(含)以上學歷，對數位科技擁有熱情、樂於學習新技術，不限科系及工作經驗，歡迎您申請菁英計畫。</span>
+							<span class="question">Q : 我沒有工作經驗，也沒有教學經驗，那可以應徵何嘉仁團隊的工作嗎？</span>
+							<span class="answer">A : 是的，不用憂心，我們提供完整的新鮮人專業職能培訓，讓你準備好了再上線! 歡迎大專院校社會新鮮人加入我們行列</span>
 						</span>
 					</span>
 					<span class="qa qa2">
 						<span class="flex-box">
-							<span class="question">Q : 菁英計畫有甚麼學習發展與特色呢？</span>
-							<span class="answer">A : 本計畫已邁入第四年，針對數位菁英量身訂作，為期十八個月，進入計畫即正職同仁，培訓軟、硬實力，完善教練導師制度，首創跨事業群高階主管指導，引導並給予不同專業視野。</span>
+							<span class="question">Q : 哪些特質是何嘉仁團隊所看重的?</span>
+							<span class="answer">A : 主動積極、責任感，最重要的是對孩子、教育的熱忱及願意學習的態度!!</span>
 						</span>
 					</span>
 					<span class="qa qa3">
 						<span class="flex-box">
-							<span class="question">Q : 菁英計畫中的大人物菁英組的發展方向是甚麼?</span>
-							<span class="answer">A : 培養5G網路規劃以及五大技術領域人才，參與各類專案，運用大數據分析、雲端運算、資安防護、行動APP開發、智慧家庭、物聯網應用等，創造數位新經濟價值。</span>
+							<span class="question">Q : 加入何嘉仁團隊後，是否有培訓計畫？</span>
+							<span class="answer">A : 我們極注重員工成長及發展，成立教育訓練發展中心，統整員工訓練課程、菁英成長營隊；並不定期舉辦職能精進講座，讓老師在職精進，由公司帶領員工創造斜槓職涯！</span>
 						</span>
 					</span>
 					<span class="qa qa4">
 						<span class="flex-box">
-							<span class="question">Q : 菁英計畫中的數位時代行銷菁英組的發展方向是甚麼?</span>
-							<span class="answer">A : 結合線上線下全通路，透過數位媒體精準傳達，讓客戶感受便捷服務，針對通路中的「接觸軌跡」進行數據分析，瞭解使用偏好，在對的時間提供對的服務與推薦，獲得最佳服務體驗。</span>
+							<span class="question">Q : 請問何嘉仁團隊有提供工作輪調或其他發展機會嗎？</span>
+							<span class="answer">A : 何嘉仁遍及台灣及海外，只要有能力有表現，發展空間無極限！員工可主動提出轉調申請，或由主管推薦，甚至是跨領域的歷練，將有機會至韓國、新加坡、上海等海外分校工作! </span>
 						</span>
 					</span>
 					<span class="qa qa5">
 						<span class="flex-box">
-							<span class="question">Q : 請問此份工作的應徵流程為何？</span>
-							<span class="answer">A : 履歷資料審查-->線上邏輯與英語測驗-->專業筆試與簡報面試-->模擬評鑑與高階主管面試(主辦單位保有調整甄選流程權利)</span>
+							<span class="question">Q : 請問何嘉仁團隊職務的應徵流程為何？</span>
+							<span class="answer">A : 請在104投遞履歷，或逕洽HESS招募專員；總部一收到履歷，書面審核通過者即會直接派發各分校，由分校電話或email信件與應徵者安排筆試及面談時間! </span>
 						</span>
 					</span>
-					<span class="qa qa5">
-						<span class="flex-box">
-							<span class="question">Q : 2019菁英計畫為什麼由「遠傳電信」及「friDay購物_遠時數位科技」共同招募呢?</span>
-							<span class="answer">A : 遠時數位科技為遠傳電信投資，經營friDay購物電商品牌，為讓本計畫菁英有更完整歷練，今年由二方共同招募，培養電商行銷規劃經營、消費行為數據分析人才。</span>
-						</span>
+
+
 
 				</div>
 			</div>
@@ -523,7 +745,7 @@
 							<div class="reCAPTCHA">
 								<!-- reCAPTCHA請寫在這 -->
 							</div>
-							<input id="customId" type="hidden" value="97165560000">
+							<input id="customId" type="hidden" value="80671711000">
 							<input id="eventId" type="hidden" value="fresh2019">
 							<div class="btn submit">確認送出<input type="submit"></div>
 							<div class="lock-hint-box">
@@ -545,14 +767,10 @@
 				<!-- 頭像會用js隨機取圖，不用套後端-->
 
 				<!-- 以下為電腦版的結構 10則留言為一個message-board-->
-				<div id="pcMsg" class="message-board-box desktop">
-
-				</div>
+				<div id="pcMsg" class="message-board-box desktop"></div>
 
 				<!-- 以下為手機版的結構 3則留言為一個message-board -->
-				<div id="mMsg" class="message-board-box mobile">
-
-				</div>
+				<div id="mMsg" class="message-board-box mobile"></div>
 
 				<div class="text-box">
 					<p>#科技始終來自於人性<i></i>＃心動不如馬上行動<i></i>＃未來科技 ＃ＡＩ人工智慧<i></i>＃生物科技尖端科技<i></i>＃人稱降落傘<i></i>＃這個面試官是爸的朋友<i></i>＃面試去<i></i>＃鼻子尖尖<i></i>＃鬍子翹翹 ＃手裡拿著一份履歷<i></i>＃殺手級履歷用詞<i></i>＃我多益1000分欸<i></i>＃那你一定沒考過多益<i></i>＃最喜歡溜白菜<i></i>#科技始終來自於人性<i></i>＃心動不如馬上行動<i></i>＃未來科技 ＃ＡＩ人工智慧<i></i>＃生物科技尖端科技<i></i>＃人稱降落傘<i></i>＃這個面試官是爸的朋友<i></i>＃面試去<i></i>＃鼻子尖尖<i></i>＃鬍子翹翹 ＃手裡拿著一份履歷<i></i>＃殺手級履歷用詞<i></i>＃我多益1000分欸<i></i>＃那你一定沒考過多益<i></i>＃最喜歡溜白菜<i></i>#科技始終來自於人性<i></i>＃心動不如馬上行動<i></i>＃未來科技 ＃ＡＩ人工智慧<i></i>＃生物科技尖端科技<i></i>＃人稱降落傘<i></i>＃這個面試官是爸的朋友<i></i>＃面試去<i></i>＃鼻子尖尖<i></i>＃鬍子翹翹 ＃手裡拿著一份履歷<i></i>＃殺手級履歷用詞<i></i>＃我多益1000分欸<i></i>＃那你一定沒考過多益<i></i>＃最喜歡溜白菜#科技始終來自於人性<i></i>＃心動不如馬上行動<i></i>＃未來科技 ＃ＡＩ人工智慧<i></i>＃生物科技尖端科技<i></i>＃人稱降落傘<i></i>＃這個面試官是爸的朋友<i></i>＃面試去<i></i>＃鼻子尖尖<i></i>＃鬍子翹翹 ＃手裡拿著一份履歷<i></i>＃殺手級履歷用詞<i></i>＃我多益1000分欸<i></i>＃那你一定沒考過多益<i></i>＃最喜歡溜白菜<i></i>#科技始終來自於人性<i></i>＃心動不如馬上行動<i></i>＃未來科技 ＃ＡＩ人工智慧<i></i>＃生物科技尖端科技<i></i>＃人稱降落傘<i></i>＃這個面試官是爸的朋友<i></i>＃面試去<i></i>＃鼻子尖尖<i></i>＃鬍子翹翹 ＃手裡拿著一份履歷<i></i>＃殺手級履歷用詞<i></i>＃我多益1000分欸<i></i>＃那你一定沒考過多益<i></i>＃最喜歡溜白菜<i></i>#科技始終來自於人性<i></i>＃心動不如馬上行動<i></i>＃未來科技 ＃ＡＩ人工智慧<i></i>＃生物科技尖端科技<i></i>＃人稱降落傘<i></i>＃這個面試官是爸的朋友<i></i>＃面試去<i></i>＃鼻子尖尖<i></i>＃鬍子翹翹 ＃手裡拿著一份履歷<i></i>＃殺手級履歷用詞<i></i>＃我多益1000分欸<i></i>＃那你一定沒考過多益<i></i>＃最喜歡溜白菜</p>
@@ -804,7 +1022,12 @@
 								<span class="com"><a href="page106.html"><span><span><img src="img/page/page/company-img/106/logo-001.png"></span><span class="text">海外發展新契機</span></span></a></span>
 							</div>
 						</div>
-
+						<div class="page-slide-box desktop">
+							<div class="title"></div>
+							<div class="com-box">
+								<span class="com"><a href="page107.html"><span><span><img src="img/page/page/company-img/107/logo-001.png"></span><span class="text">工作就在你家巷口</span></span></a></span>
+							</div>
+						</div>
 						<div class="page-slide-box">
 							<div class="banner"><a href="live.html"><img src="img/page/page/section9-slider-banner1.jpg"></a></div>
 						</div>
@@ -829,13 +1052,6 @@
 							<div class="com-box">
 								<span class="com"><a href="page106.html"><span><span><img src="img/page/page/company-img/106/logo-001.png"></span><span class="text">海外發展新契機</span></span></a></span>
 								<span class="com"><a href="page107.html"><span><span><img src="img/page/page/company-img/107/logo-001.png"></span><span class="text">工作就在你家巷口</span></span></a></span>
-							</div>
-						</div>
-						<div class="page-slide-box mobile company-logo">
-							<div class="title"></div>
-							<div class="com-box">
-								<span class="com"><a href="page108.html"><span><span><img src="img/page/page/company-img/108/logo-001.png"></span><span class="text">挹注5G產業新希望</span></span></a></span>
-								<span class="com"><a href="page109.html"><span><span><img src="img/page/page/company-img/109/logo-001.png"></span><span class="text">讓愛無限，把夢實現</span></span></a></span>
 							</div>
 						</div>
 						<div class="page-slide-box">
