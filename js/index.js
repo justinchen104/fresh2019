@@ -5,7 +5,51 @@ $(function() {
 	setTimeout(function() {
 		firstInit = 0;
 	},1000)
+	//判斷網址是否帶有特定產業別參數
+	var url = location.href;
+	if(url.indexOf('?')!=-1) {
+		var wktype = "";
+		//將各自的參數資料切割放進ary中
+		var ary = url.split('?')[1].split('&');
 
+		//下迴圈去搜尋每個資料參數
+		for(i=0;i<=ary.length-1;i++) {
+			//如果資料名稱為wktype的話那就把他取出來
+			if(ary[i].split('=')[0] == 'wktype'){
+				wktype = ary[i].split('=')[1];
+			}
+		}
+	}
+	if (wktype=="service") {
+		$("body").addClass('type-service')
+		setTimeout(function() {
+			$(".li-cat-1").click();
+		},1100)
+		setTimeout(function() {
+			var randomNumX1 = getRandomInt (101, 109)
+			$("ul[data-com-list-1] li.level1 [data-com="+randomNumX1+"]").click();
+		},1800)
+	}
+	if (wktype=="financial") {
+		$("body").addClass('type-financial')
+		setTimeout(function() {
+			$(".li-cat-2").click();
+		},1100)
+		setTimeout(function() {
+			var randomNumX1 = getRandomInt (201, 207)
+			$("ul[data-com-list-2] li.level1 [data-com="+randomNumX1+"]").click();
+		},1800)
+	}
+	if (wktype=="technology") {
+		$("body").addClass('type-technology')
+		setTimeout(function() {
+			$(".li-cat-3").click();
+		},1100)
+		setTimeout(function() {
+			var randomNumX1 = getRandomInt (301, 306)
+			$("ul[data-com-list-3] li.level1 [data-com="+randomNumX1+"]").click();
+		},1800)
+	}
 	//直播倒數
 	$("#countdown-box").countdown("2019/03/29 12:30:00", function(event) {
 		if (event.elapsed) {
