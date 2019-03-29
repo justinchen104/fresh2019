@@ -51,7 +51,7 @@ $(function() {
 		},1800)
 	}
 	//直播倒數
-	$("#countdown-box").countdown("2019/03/29 12:30:00", function(event) {
+	$("#countdown-box").countdown("2019/04/03 12:30:00", function(event) {
 		if (event.elapsed) {
 			//進網頁時，時間已過期
 			//alert('already finish')
@@ -527,7 +527,7 @@ $(function() {
 
 	//點選公司logo後出現該公司簡介、職缺
 	$("ul.company .com").click(function(event) {
-		cancelHandler(event);
+		//cancelHandler(event);
 		specialOption1 = specialOption1+1
 		$("ul.company .com").removeClass('active')
 		$(this).addClass('active');
