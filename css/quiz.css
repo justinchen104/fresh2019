@@ -108,6 +108,7 @@ html.ie7 em {
 }
 body {
   margin: 0;
+  padding-top: 83px;
   background-repeat: no-repeat;
   font-size: 16px;
   line-height: 1.5;
@@ -264,6 +265,9 @@ a[href^="tel"] {
   }
 }
 header {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
   width: 100%;
   height: 83px;
   background-color: #fff;
@@ -390,10 +394,20 @@ header .page-link-box li {
   color: #555;
   margin-right: 20px;
 }
+@media all and (max-width: 1200px) {
+  header .page-link-box li {
+    font-size: 10px;
+  }
+}
 header .page-link-box li a {
   font-size: 18px;
   font-weight: bold;
   color: #555;
+}
+@media all and (max-width: 1200px) {
+  header .page-link-box li a {
+    font-size: 16px;
+  }
 }
 header .page-link-box li:last-child {
   margin-right: 0;
@@ -430,7 +444,7 @@ header .mobile-menu-out-box.hide .bg-box {
 header .mobile-menu-out-box {
   opacity: 1;
   visibility: visible;
-  z-index: 11;
+  z-index: 1000;
   position: fixed;
   top: 0;
   left: 0;
@@ -547,6 +561,21 @@ header .mobile-menu-out-box .bg-box ul.link-menu li.icon-box span {
 header .mobile-menu-out-box .bg-box ul.link-menu li.icon-box span.wk-fb-share {
   padding: 10px 0;
   cursor: pointer;
+}
+body.index .page-link-box li.link1 a {
+  color: #fe7901;
+}
+body.live .page-link-box li.link2 a {
+  color: #fe7901;
+}
+body.sstandc .page-link-box li.link3 a {
+  color: #fe7901;
+}
+body.quiz .page-link-box li.link4 a {
+  color: #fe7901;
+}
+body.invite .page-link-box li.link5 a {
+  color: #fe7901;
 }
 footer {
   z-index: 5;
@@ -780,14 +809,13 @@ body.quiz footer {
   background-color: #F5A623;
 }
 .anchor-box ul li:nth-child(2) {
-  display: none;
-  background-color: #289428;
+  background-color: #d70500;
 }
 .anchor-box ul li:nth-child(3) {
-  background-color: #9b6a61;
+  background-color: #579891;
 }
 .anchor-box ul li:nth-child(4) {
-  background-color: #d70500;
+  background-color: #9b6a61;
 }
 .anchor-box ul li:nth-child(5) {
   background-color: #39579a;
