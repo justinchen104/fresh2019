@@ -5,35 +5,47 @@ $(function() {
 	});
 
 	//FB分享按鈕
-	window.fbAsyncInit = function() {
-		FB.init({
-			//appId      : '1207697892719715',
-			appId      : '402052547036064',
-			xfbml      : true,
-			version    : 'v3.2'
-		});
-		FB.AppEvents.logPageView();
-	};
-	(function(d, s, id){
-		var js, fjs = d.getElementsByTagName(s)[0];
-		if (d.getElementById(id)) {return;}
-		js = d.createElement(s); js.id = id;
-		js.src = "https://connect.facebook.net/en_US/sdk.js";
-		fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));
+	// window.fbAsyncInit = function() {
+	// 	FB.init({
+	// 		//appId      : '1207697892719715',
+	// 		appId      : '402052547036064',
+	// 		xfbml      : true,
+	// 		version    : 'v3.2'
+	// 	});
+	// 	FB.AppEvents.logPageView();
+	// };
+	// (function(d, s, id){
+	// 	var js, fjs = d.getElementsByTagName(s)[0];
+	// 	if (d.getElementById(id)) {return;}
+	// 	js = d.createElement(s); js.id = id;
+	// 	js.src = "https://connect.facebook.net/en_US/sdk.js";
+	// 	fjs.parentNode.insertBefore(js, fjs);
+	// }(document, 'script', 'facebook-jssdk'));
 
 	//替換FB粉分享按鈕連結為當前頁面
-	//document.querySelector(".wk-fb-share").onclick=function(){
-	$(".wk-fb-share").click(function(event) {
-		//alert('Facebook分享按鈕')
-		var src = location.href
-		FB.ui({
-			method: 'share',
-			display: 'popup',
-			href: src,
-			hashtag: '#前進吧你的主場'
-		}, function(response){});
-	});
+	// $(".wk-fb-share").click(function(event) {
+	// 	//alert('Facebook分享按鈕')
+	// 	var src = location.href
+	// 	FB.ui({
+	// 		method: 'share',
+	// 		display: 'popup',
+	// 		href: src,
+	// 		hashtag: '#前進吧你的主場'
+	// 	}, function(response){});
+	// });
+
+	// $(window).scroll(function(event) {
+	// 	var scrollTopNow = $(window).scrollTop()
+	// 	if (scrollTopNow>1) {
+	// 		if (!$("header").hasClass('header-fixed')) {
+	// 			$("header").addClass('header-fixed')
+	// 		}
+	// 	}else {
+	// 		if ($("header").hasClass('header-fixed')) {
+	// 			$("header").removeClass('header-fixed')
+	// 		}
+	// 	}
+	// });
 
 
 	//控制開啟手機版header選單
