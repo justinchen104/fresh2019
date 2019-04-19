@@ -18,6 +18,8 @@ $(function() {
             alert('請確認已勾選 同意提供資料')
         } else if (wkName==0 || wkEmail==0 || wkQstyle==0) {
             alert('請確認已填寫所有必填欄位')
+        } else if (!wkQdetail || wkQdetail.trim().length === 0) {
+            alert('請填寫問題內容')
         } else {
             if(!regex.test(wkEmail)) {
                 alert('e-mail格式不正確，請重新確認')

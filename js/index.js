@@ -444,8 +444,8 @@ $(function() {
 		variableWidth: true,
 		prevArrow:"<span class='slick-prev'></span>",
             nextArrow:"<span class='slick-next'></span>",
-		// autoplay: true,
-		// autoplaySpeed: 2000,
+		autoplay: true,
+		autoplaySpeed: 5000,
 	});
 	$(".company").fadeOut(500)
 
@@ -616,7 +616,7 @@ function wkInit() {
 		//slider跳轉至隨機一個slide
 		$(".company").slick('slickGoTo',Num2)
 		//展開隨機一個公司職缺
-		$(".company-box ul:nth-child("+randomNum1+") li.level1.slick-active .com:nth-child("+randomNum3+")").addClass('active').trigger("click");
+		//$(".company-box ul:nth-child("+randomNum1+") li.level1.slick-active .com:nth-child("+randomNum3+")").addClass('active').trigger("click");
 	},100)
 }
 
