@@ -51,7 +51,7 @@ $(function() {
 		},1800)
 	}
 	//直播倒數
-	$("#countdown-box").countdown("2019/04/26 12:30:00", function(event) {
+	$("#countdown-box").countdown("2019/05/8 12:30:00", function(event) {
 		if (event.elapsed) {
 			//進網頁時，時間已過期
 			//alert('already finish')
@@ -445,7 +445,7 @@ $(function() {
 		prevArrow:"<span class='slick-prev'></span>",
             nextArrow:"<span class='slick-next'></span>",
 		autoplay: true,
-		autoplaySpeed: 5000,
+		autoplaySpeed: 3000,
 	});
 	$(".company").fadeOut(500)
 
